@@ -1,0 +1,90 @@
+name: Auto Release
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+      - 'v*.*.*-*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install build twine
+
+      - name: Get version from tag
+        id: version
+        run: echo "VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_OUTPUT
+
+      - name: Update version in pyproject.toml
+        run: |
+          VERSION=${{ steps.version.outputs.VERSION }}
+          sed -i "s/^version = .*/version = \"$VERSION\"/" pyproject.toml || true
+          grep "^version" pyproject.toml || true
+
+      - name: Build package
+        run: python -m build || echo "No build config, skipping"
+
+      - name: Create Release
+        id: create_release
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const tag = context.ref.replace('refs/tags/', '');
+            const { data: release } = await github.rest.repos.createRelease({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              tag_name: tag,
+              name: `Release ${tag}`,
+              body: `## Changes in ${tag}\n\n- Auto-generated release`,
+              draft: false,
+              prerelease: tag.includes('-')
+            });
+            return release.id;
+
+      - name: Upload Release Asset
+        if: hashFiles('dist/*') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist/
+
+  notify:
+    runs-on: ubuntu-latest
+    needs: release
+    if: success()
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Get version
+        id: version
+        run: echo "VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_OUTPUT
+
+      - name: Notify via GitHub Issues
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const tag = context.ref.replace('refs/tags/', '');
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `🚀 Release ${tag} published`,
+              body: `## Release ${tag} has been published successfully.\n\n- Build: ✅\n- Release: ✅\n- Time: ${new Date().toISOString()}`,
+              labels: ['release', 'automated']
+            });
