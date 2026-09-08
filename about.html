@@ -24,6 +24,12 @@
     .edu-degree { font-size: 18px; font-weight: 600; color: var(--c-white); margin-bottom: 6px; }
     .edu-school { font-size: 15px; color: var(--c-text); margin-bottom: 8px; }
     .edu-years { font-family: var(--f-mono); font-size: 13px; color: var(--c-accent-on-dark); letter-spacing: 0.04em; }
+    .exp-list { display: flex; flex-direction: column; gap: 1px; margin-top: 8px; }
+    .exp-item { border: 1px solid var(--c-grid); background: var(--c-bg-alt); padding: 22px 28px; transition: border-color var(--transition); }
+    .exp-item:hover { border-color: var(--c-accent-on-dark); }
+    .exp-role { font-size: 17px; font-weight: 600; color: var(--c-white); margin-bottom: 4px; }
+    .exp-org { font-size: 14px; color: var(--c-text); margin-bottom: 6px; }
+    .exp-years { font-family: var(--f-mono); font-size: 12px; color: var(--c-accent-on-dark); letter-spacing: 0.04em; }
     .svc { padding-top: 0; }
     .svc .container { max-width: 1080px; }
     .svc-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 1px; }
@@ -89,6 +95,24 @@
         <div class="edu-degree" data-i18n="edu_degree">B.Sc. Finance &amp; Management Science</div>
         <div class="edu-school" data-i18n="edu_school">Technology &amp; Development College, Egypt</div>
         <div class="edu-years" data-i18n="edu_years">2014 — 2017</div>
+      </div>
+      <h2 data-i18n="about_experience_title">Experience</h2>
+      <div class="exp-list">
+        <div class="exp-item">
+          <div class="exp-role" data-i18n="exp1_role">Content Creator &amp; Video Producer</div>
+          <div class="exp-org" data-i18n="exp1_org">TIME TRAVELER'S CONFESSIONS — YouTube Channel</div>
+          <div class="exp-years" data-i18n="exp1_years">2026 — Present</div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-role" data-i18n="exp2_role">AI Video Advertising (Freelance)</div>
+          <div class="exp-org" data-i18n="exp2_org">Jojoba Oil &amp; Natural Products</div>
+          <div class="exp-years" data-i18n="exp2_years">2025 — 2026</div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-role" data-i18n="exp3_role">E-commerce &amp; Digital Marketing</div>
+          <div class="exp-org" data-i18n="exp3_org">Online Retail (Shoes / Apparel)</div>
+          <div class="exp-years" data-i18n="exp3_years">2021 — 2023</div>
+        </div>
       </div>
     </div>
   </section>
