@@ -3,8 +3,8 @@ name: Deploy Portfolio
 
 on:
   push:
-    branches: [portfolio]
-    paths: ['index.html', 'css/**', 'js/**', 'img/**', '404.html', 'favicon.svg']
+    branches: [main, portfolio]
+    paths: ['index.html', 'css/**', 'js/**', 'img/**', '404.html', 'favicon.svg', '.github/workflows/deploy-portfolio.yml']
 
 permissions:
   contents: read
