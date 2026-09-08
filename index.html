@@ -1,238 +1,449 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>عبدالله ماهر — منتج فيديو بالذكاء الاصطناعي</title>
-  <meta name="description" content="منتج فيديو بالذكاء الاصطناعي — أفلام سينمائية بقلم AI من السيناريو حتى النشر. فراعنة، تيتانيك، تشيرنوبيل، مينكرافت — كلها قصص عاشها الراوي.">
-  <meta property="og:title" content="عبدالله ماهر — AI Video Producer">
-  <meta property="og:description" content="أصنع أفلامًا سينمائية بقلم الذكاء الاصطناعي — من السيناريو حتى النشر، شخص واحد، مسؤولية كاملة">
+  <title>Abdalla Maher — AI Video Producer &amp; Storyteller</title>
+  <meta name="description" content="Abdalla Maher is an AI video producer, documentary filmmaker, and storyteller specializing in cinematic AI-generated content, branded ads, and narrative series across YouTube and multiple platforms.">
+  <meta property="og:title" content="Abdalla Maher — AI Video Producer &amp; Storyteller">
+  <meta property="og:description" content="AI video production, documentary filmmaking, and cinematic storytelling across 6 platforms.">
   <meta property="og:type" content="website">
-  <meta name="theme-color" content="#0A0A0A">
-  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <meta property="og:image" content="favicon.svg">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- ═══ شريط التنقل ═══ -->
-  <header class="site-header" id="top">
-    <nav class="nav-inner">
-      <a href="./" class="nav-logo" aria-label="الرئيسية">ع.م</a>
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="nav-inner container">
+      <a href="#hero" class="nav-logo" aria-label="Home">A<span class="accent">.</span>M</a>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#about">نبذة</a></li>
-        <li><a href="#projects">أعمال</a></li>
-        <li><a href="#skills">مهارات</a></li>
-        <li><a href="#contact">تواصل</a></li>
+        <li><a href="#about" data-i18n="nav_about">About</a></li>
+        <li><a href="#services" data-i18n="nav_services">Services</a></li>
+        <li><a href="#work" data-i18n="nav_work">Work</a></li>
+        <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+        <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
       </ul>
-      <ul class="nav-social">
-        <li><a href="https://www.youtube.com/@abdallamaher_1" target="_blank" rel="noopener" aria-label="YouTube">YT</a></li>
-        <li><a href="https://github.com/abdallamaher1993" target="_blank" rel="noopener" aria-label="GitHub">GH</a></li>
-        <li><a href="https://abdalla480.wordpress.com" target="_blank" rel="noopener" aria-label="WordPress">WP</a></li>
-      </ul>
-      <button class="nav-toggle" id="navToggle" aria-label="القائمة" aria-expanded="false">
-        <span></span><span></span>
-      </button>
-    </nav>
-  </header>
+      <div class="nav-actions">
+        <div class="lang-switcher" role="group" aria-label="Language switcher">
+          <button class="lang-btn active" data-lang="en" aria-label="English">EN</button>
+          <button class="lang-btn" data-lang="ar" aria-label="العربية">ع</button>
+          <button class="lang-btn" data-lang="zh-TW" aria-label="繁體中文">繁</button>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
 
-  <main>
-
-    <!-- ═══ 01 — البطل ═══ -->
-    <section class="hero" id="hero">
-      <div class="hero-inner">
-        <span class="section-num">01</span>
-        <h1 class="hero-name">عبدالله<br>ماهر</h1>
-        <p class="hero-title">منتج فيديو بالذكاء الاصطناعي</p>
-        <p class="hero-tagline">أصنع أفلامًا سينمائية بقلم الذكاء الاصطناعي — من السيناريو حتى النشر<br>شخص واحد، مسؤولية كاملة.</p>
-        <div class="hero-stats">
-          <div class="stat">
-            <span class="stat-val">33</span>
-            <span class="stat-label">فيديو منشور</span>
+  <!-- ========== HERO ========== -->
+  <section id="hero" class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <p class="hero-label" data-i18n="hero_label">AI Video Producer &amp; Storyteller</p>
+          <h1 class="hero-title" data-i18n="hero_title">Abdalla Maher</h1>
+          <p class="hero-desc" data-i18n="hero_desc">Crafting cinematic AI-generated documentaries, branded content, and narrative series that captivate audiences across the globe.</p>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-num" data-i18n="hero_stat1_num">33</span>
+              <span class="stat-label" data-i18n="hero_stat1_label">Videos</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-i18n="hero_stat2_num">6</span>
+              <span class="stat-label" data-i18n="hero_stat2_label">Platforms</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-i18n="hero_stat3_num">3</span>
+              <span class="stat-label" data-i18n="hero_stat3_label">Documentary Films</span>
+            </div>
           </div>
-          <div class="stat">
-            <span class="stat-val">6</span>
-            <span class="stat-label">منصات</span>
-          </div>
-          <div class="stat">
-            <span class="stat-val">3</span>
-            <span class="stat-label">أفلام وثائقية طويلة</span>
+          <div class="hero-cta">
+            <a href="#work" class="btn btn-primary" data-i18n="hero_cta1">View Work</a>
+            <a href="#contact" class="btn btn-outline" data-i18n="hero_cta2">Get in Touch</a>
           </div>
         </div>
-        <a href="#projects" class="hero-cta">شاهد الأعمال <span aria-hidden="true">←</span></a>
+        <div class="hero-visual">
+          <div class="hero-accent-line"></div>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <hr class="divider">
-
-    <!-- ═══ 02 — نبذة ═══ -->
-    <section class="about" id="about">
-      <div class="section-head">
-        <span class="section-num">02</span>
-        <h2 class="section-title">نبذة عني</h2>
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <h2 class="section-title" data-i18n="about_title">About</h2>
       </div>
-      <div class="about-body">
+      <div class="about-grid">
         <div class="about-text">
-          <p><strong>أنا عبدالله ماهر</strong> — منتج فيديو بالذكاء الاصطناعي يمزج المرئيات السينمائية بسرد يشدّ المشاهد ويبقيه.</p>
-          <p>بدأت بهوس بسيط: هل يمكن للذكاء الاصطناعي أن يصنع قصصًا تستحق المشاهدة؟ بعد أشهر من البناء والكسر وإعادة البناء، تحوّل الهوس إلى حرفة. اليوم أُنتج حلقات أنمي كاملة، سرد تاريخي، أفلام مينكرافت سردية، وإعلانات تجارية — باتساق ولمعان الإنتاج التقليدي.</p>
-          <p>مشروعي الرائد <em>الأنمي الفرعوني</em> هو ملحمة أنمي بالذكاء الاصطناعي تعيد تخيّل مصر القديمة مشهدًا بمشهد — دليل على أن الإنتاج بالذكاء الاصطناعي يستطيع حمل حلقات كاملة، لا مقاطع فقط.</p>
-          <p>قناتي <em>اعترافات مسافر عبر الزمن</em> تُحوّل أكبر ألغاز التاريخ إلى فيديوهات سينمائية بأسلوب راوي عاش الحدث — فراعنة، ناجون من تيتانيك، كهنة — بأحدث تقنيات الاحتفاظ بالمشاهد.</p>
+          <p data-i18n="about_p1">I am Abdalla Maher — an AI video producer, documentary filmmaker, and digital storyteller based in Taiwan. I specialize in crafting cinematic AI-generated content that bridges history, culture, and imagination.</p>
+          <p data-i18n="about_p2">With a background in narrative filmmaking and AI-powered production, I create content that transforms complex stories into visually stunning experiences — from ancient Egyptian epics to futuristic anime, from historical documentaries to branded AI advertisements.</p>
+          <p data-i18n="about_p3">My work spans six platforms and reaches audiences worldwide, combining cutting-edge AI tools with traditional storytelling craft to produce content that is both technically impressive and emotionally resonant.</p>
         </div>
         <div class="about-meta">
-          <div class="meta-block">
-            <h3>ما يميّز عملي</h3>
-            <ul>
-              <li>تسليم شامل: سيناريو → تصميم → توليد → صوت → مونتاج → نشر</li>
-              <li>شخصيات ثابتة: أوراق شخصيات، قفل أسلوبي، بواب جودة صارم</li>
-              <li>سرد محسّن لوقت المشاهدة: خطاف في أول عشر ثوانٍ، إيقاع مضبوط</li>
-              <li>خط إنتاج آلي: توليد → فيديو → تجميع → ترجمة → نشر</li>
-            </ul>
+          <div class="meta-item">
+            <span class="meta-label" data-i18n="about_location_label">Based in</span>
+            <span class="meta-value" data-i18n="about_location_value">Taiwan</span>
           </div>
-          <div class="meta-block">
-            <h3>المقر</h3>
-            <p>تايوان — أعمل عن بُعد وأفتح لأدوار في أي مكان بالعالم.</p>
+          <div class="meta-item">
+            <span class="meta-label" data-i18n="about_focus_label">Focus</span>
+            <span class="meta-value" data-i18n="about_focus_value">AI Video · Documentary · Narrative</span>
           </div>
-          <div class="meta-block">
-            <h3>الخدمات</h3>
-            <ul>
-              <li>إنتاج فيديو وأنمي بالذكاء الاصطناعي</li>
-              <li>مونتاج وما بعد الإنتاج</li>
-              <li>إعلانات تجارية وأفلام منتجات</li>
-              <li>إدارة قنوات يوتيوب ونموّها</li>
-            </ul>
+          <div class="meta-item">
+            <span class="meta-label" data-i18n="about_languages_label">Languages</span>
+            <span class="meta-value" data-i18n="about_languages_value">Arabic · English · Chinese</span>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <hr class="divider">
+  <!-- ========== SERVICES ========== -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2 class="section-title" data-i18n="services_title">Services</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="2"/><polygon points="10,8 16,12 10,16" fill="currentColor"/></svg>
+          </div>
+          <h3 data-i18n="services_s1_title">AI Video Production</h3>
+          <p data-i18n="services_s1_desc">End-to-end AI-generated video creation — from concept and scripting through AI-driven visual generation, voiceover, and post-production. Delivering cinema-quality content at unprecedented speed.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3 data-i18n="services_s2_title">Documentary Filmmaking</h3>
+          <p data-i18n="services_s2_desc">AI-enhanced documentary production that brings historical events to life with cinematic realism. Combining archival research with AI-generated reenactments for compelling non-fiction narratives.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3 data-i18n="services_s3_title">Narrative Series</h3>
+          <p data-i18n="services_s3_desc">Episodic storytelling across genres — from anime-style historical fiction to time-travel narratives. Building audience engagement through serialized content with consistent visual identity.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <h3 data-i18n="services_s4_title">Branded AI Content</h3>
+          <p data-i18n="services_s4_desc">AI-generated advertisements and branded content that combine product storytelling with visual innovation. Creating scroll-stopping content that drives engagement and brand recall.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- ═══ 03 — أعمال ═══ -->
-    <section class="projects" id="projects">
-      <div class="section-head">
+  <!-- ========== WORK ========== -->
+  <section id="work" class="work">
+    <div class="container">
+      <div class="section-header">
         <span class="section-num">03</span>
-        <h2 class="section-title">أعمال مختارة</h2>
+        <h2 class="section-title" data-i18n="work_title">Work</h2>
       </div>
-      <div class="projects-grid" id="projectsGrid">
-        <!-- تُولد عبر JS -->
+      <div class="work-grid">
+        <!-- Project 1 -->
+        <article class="project-card">
+          <div class="project-img-wrap">
+            <img src="img/menes.jpg" alt="Pharaonic Anime" loading="lazy" width="600" height="400">
+          </div>
+          <div class="project-info">
+            <span class="project-tag" data-i18n="work_p1_tag">Documentary</span>
+            <h3 data-i18n="work_p1_title">Pharaonic Anime</h3>
+            <p data-i18n="work_p1_desc">An anime-style retelling of ancient Egyptian history — merging pharaonic grandeur with Japanese animation aesthetics for a visually epic narrative.</p>
+            <a href="https://www.youtube.com/@abdallamaher_1" class="project-link" target="_blank" rel="noopener" aria-label="Watch Pharaonic Anime on YouTube">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              <span data-i18n="work_watch">Watch</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <div class="project-img-wrap">
+            <img src="img/titanic.jpg" alt="Titanic 1912" loading="lazy" width="600" height="400">
+          </div>
+          <div class="project-info">
+            <span class="project-tag" data-i18n="work_p2_tag">Documentary</span>
+            <h3 data-i18n="work_p2_title">Titanic 1912</h3>
+            <p data-i18n="work_p2_desc">A cinematic AI recreation of the Titanic's final voyage — blending historical accuracy with dramatic visual storytelling to honor the lives and legacy of 1912.</p>
+            <a href="https://www.youtube.com/@abdallamaher_1" class="project-link" target="_blank" rel="noopener" aria-label="Watch Titanic 1912 on YouTube">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              <span data-i18n="work_watch">Watch</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+          <div class="project-img-wrap">
+            <img src="img/chernobyl.jpg" alt="Chernobyl" loading="lazy" width="600" height="400">
+          </div>
+          <div class="project-info">
+            <span class="project-tag" data-i18n="work_p3_tag">Documentary</span>
+            <h3 data-i18n="work_p3_title">Chernobyl</h3>
+            <p data-i18n="work_p3_desc">An immersive AI-rendered documentary on the Chernobyl disaster — atmospheric, haunting, and meticulously researched to convey the scale of history's worst nuclear accident.</p>
+            <a href="https://www.youtube.com/@abdallamaher_1" class="project-link" target="_blank" rel="noopener" aria-label="Watch Chernobyl on YouTube">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              <span data-i18n="work_watch">Watch</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card">
+          <div class="project-img-wrap">
+            <img src="img/dawn.jpg" alt="Dawn of Civilization" loading="lazy" width="600" height="400">
+          </div>
+          <div class="project-info">
+            <span class="project-tag" data-i18n="work_p4_tag">Narrative</span>
+            <h3 data-i18n="work_p4_title">Dawn of Civilization</h3>
+            <p data-i18n="work_p4_desc">An epic AI-generated series exploring the rise of human civilization — from Mesopotamia to the Nile, rendered with breathtaking cinematic scope and anthropological depth.</p>
+            <a href="https://www.youtube.com/@abdallamaher_1" class="project-link" target="_blank" rel="noopener" aria-label="Watch Dawn of Civilization on YouTube">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              <span data-i18n="work_watch">Watch</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card">
+          <div class="project-img-wrap">
+            <img src="img/minecraft.jpg" alt="Minecraft Narrative" loading="lazy" width="600" height="400">
+          </div>
+          <div class="project-info">
+            <span class="project-tag" data-i18n="work_p5_tag">Narrative</span>
+            <h3 data-i18n="work_p5_title">Minecraft Narrative</h3>
+            <p data-i18n="work_p5_desc">A unique fusion of Minecraft's visual language with cinematic storytelling — transforming blocky worlds into emotionally rich narrative experiences through AI-driven production.</p>
+            <a href="https://www.youtube.com/@abdallamaher_1" class="project-link" target="_blank" rel="noopener" aria-label="Watch Minecraft Narrative on YouTube">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              <span data-i18n="work_watch">Watch</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 6 -->
+        <article class="project-card">
+          <div class="project-img-wrap">
+            <img src="img/thoth.jpg" alt="Thoth Neon Anime" loading="lazy" width="600" height="400">
+          </div>
+          <div class="project-info">
+            <span class="project-tag" data-i18n="work_p6_tag">Anime</span>
+            <h3 data-i18n="work_p6_title">Thoth Neon Anime</h3>
+            <p data-i18n="work_p6_desc">A neon-drenched anime series inspired by Thoth, the Egyptian god of wisdom — blending cyberpunk aesthetics with ancient mythology in a futuristic visual spectacle.</p>
+            <a href="https://www.youtube.com/@abdallamaher_1" class="project-link" target="_blank" rel="noopener" aria-label="Watch Thoth Neon Anime on YouTube">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              <span data-i18n="work_watch">Watch</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 7 -->
+        <article class="project-card">
+          <div class="project-img-wrap">
+            <img src="img/oasis.jpg" alt="Time Traveler's Confessions" loading="lazy" width="600" height="400">
+          </div>
+          <div class="project-info">
+            <span class="project-tag" data-i18n="work_p7_tag">Series</span>
+            <h3 data-i18n="work_p7_title">Time Traveler's Confessions</h3>
+            <p data-i18n="work_p7_desc">An episodic sci-fi series following a time traveler's secret journal — each episode a different era, each confession revealing the cost of witnessing history unfold.</p>
+            <a href="https://www.youtube.com/@abdallamaher_1" class="project-link" target="_blank" rel="noopener" aria-label="Watch Time Traveler's Confessions on YouTube">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              <span data-i18n="work_watch">Watch</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 8 -->
+        <article class="project-card">
+          <div class="project-img-wrap">
+            <img src="img/nur.jpg" alt="Branded AI Ads" loading="lazy" width="600" height="400">
+          </div>
+          <div class="project-info">
+            <span class="project-tag" data-i18n="work_p8_tag">Branded</span>
+            <h3 data-i18n="work_p8_title">Branded AI Ads</h3>
+            <p data-i18n="work_p8_desc">AI-generated advertisement content for brands — combining product storytelling with cinematic AI visuals to create scroll-stopping, engagement-driving campaigns.</p>
+            <a href="https://www.youtube.com/@abdallamaher_1" class="project-link" target="_blank" rel="noopener" aria-label="Watch Branded AI Ads on YouTube">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              <span data-i18n="work_watch">Watch</span>
+            </a>
+          </div>
+        </article>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <hr class="divider">
-
-    <!-- ═══ 04 — مهارات ═══ -->
-    <section class="skills" id="skills">
-      <div class="section-head">
+  <!-- ========== SKILLS ========== -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="section-header">
         <span class="section-num">04</span>
-        <h2 class="section-title">مهارات وأدوات</h2>
+        <h2 class="section-title" data-i18n="skills_title">Skills</h2>
       </div>
       <div class="skills-grid">
         <div class="skill-group">
-          <h3>خط الإنتاج</h3>
+          <h3 data-i18n="skills_pipeline_title">Production Pipeline</h3>
           <ul class="skill-list">
-            <li>كتابة سيناريو وسرد</li>
-            <li>تصميم شخصيات بثبات أسلوبي</li>
-            <li>توليد صور → فيديو (Wan 2.2 I2V)</li>
-            <li>تعليق صوتي (Edge TTS)</li>
-            <li>مونتاج وتجميع (FFmpeg)</li>
-            <li>ترجمة متعددة اللغات</li>
-            <li>نشر آلي متعدد المنصات</li>
+            <li data-i18n="skills_pipeline_1">Concept &amp; Scriptwriting</li>
+            <li data-i18n="skills_pipeline_2">AI Visual Generation</li>
+            <li data-i18n="skills_pipeline_3">Voiceover &amp; Sound Design</li>
+            <li data-i18n="skills_pipeline_4">Editing &amp; Post-Production</li>
+            <li data-i18n="skills_pipeline_5">Color Grading &amp; Compositing</li>
           </ul>
         </div>
         <div class="skill-group">
-          <h3>أدوات الإنتاج</h3>
+          <h3 data-i18n="skills_tools_title">Tools &amp; Platforms</h3>
           <ul class="skill-list">
-            <li>Wan 2.2 I2V (صورة→فيديو)</li>
-            <li>Draw Things (توليد صور محلي)</li>
-            <li>RunPod (حوسبة سحابية GPU)</li>
-            <li>ComfyUI (رفع الجودة)</li>
-            <li>FFmpeg (مونتاج + معايير بث)</li>
-            <li>Edge TTS (سرد صوتي)</li>
+            <li data-i18n="skills_tools_1">Kling AI / Runway / Pika</li>
+            <li data-i18n="skills_tools_2">Midjourney / DALL-E</li>
+            <li data-i18n="skills_tools_3">ElevenLabs / Suno</li>
+            <li data-i18n="skills_tools_4">DaVinci Resolve / Premiere</li>
+            <li data-i18n="skills_tools_5">After Effects / Blender</li>
           </ul>
         </div>
         <div class="skill-group">
-          <h3>أتمتة ونشر</h3>
+          <h3 data-i18n="skills_auto_title">Automation &amp; AI</h3>
           <ul class="skill-list">
-            <li>YouTube Data API v3</li>
-            <li>Instagram Graph API</li>
-            <li>n8n (أتمتة مسارات العمل)</li>
-            <li>Ollama (نماذج محلية)</li>
-            <li>mem0 + Qdrant (ذاكرة وكيل)</li>
-            <li>Hermes Gateway</li>
-          </ul>
-        </div>
-        <div class="skill-group">
-          <h3>ويب وتسويق</h3>
-          <ul class="skill-list">
-            <li>HTML / PHP / MySQL</li>
-            <li>WordPress</li>
-            <li>تسويق إلكتروني</li>
-            <li>إدارة وسائل التواصل</li>
+            <li data-i18n="skills_auto_1">Multi-platform Publishing</li>
+            <li data-i18n="skills_auto_2">Workflow Automation</li>
+            <li data-i18n="skills_auto_3">AI Pipeline Integration</li>
+            <li data-i18n="skills_auto_4">Content Localization</li>
+            <li data-i18n="skills_auto_5">Analytics &amp; Optimization</li>
           </ul>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <hr class="divider">
-
-    <!-- ═══ 05 — تواصل ═══ -->
-    <section class="contact" id="contact">
-      <div class="section-head">
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
         <span class="section-num">05</span>
-        <h2 class="section-title">تواصل معي</h2>
+        <h2 class="section-title" data-i18n="contact_title">Contact</h2>
       </div>
-      <div class="contact-body">
-        <p class="contact-intro">هل لديك مشروع أو فكرة تستحق فيديو سينمائي؟ أرسل رسالة وسأردّ خلال 24 ساعة.</p>
-        <form class="contact-form" id="contactForm" novalidate>
-          <div class="form-row">
-            <div class="form-field">
-              <label for="fname">الاسم</label>
-              <input type="text" id="fname" name="name" required autocomplete="name" placeholder="اسمك الكامل">
+      <div class="contact-grid">
+        <div class="contact-form-wrap">
+          <form id="contactForm" action="https://formsubmit.co/abdalla2.1993@gmail.com" method="POST" class="contact-form">
+            <input type="hidden" name="_subject" value="Portfolio Contact — Abdalla Maher">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="_honey" style="display:none">
+            <div class="form-group">
+              <label for="contactName" data-i18n="contact_name_label">Name</label>
+              <input type="text" id="contactName" name="name" required autocomplete="name">
             </div>
-            <div class="form-field">
-              <label for="femail">البريد الإلكتروني</label>
-              <input type="email" id="femail" name="email" required autocomplete="email" placeholder="بريدك@example.com">
+            <div class="form-group">
+              <label for="contactEmail" data-i18n="contact_email_label">Email</label>
+              <input type="email" id="contactEmail" name="email" required autocomplete="email">
             </div>
+            <div class="form-group">
+              <label for="contactMessage" data-i18n="contact_msg_label">Message</label>
+              <textarea id="contactMessage" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" data-i18n="contact_submit">Send Message</button>
+            <p class="form-status" id="formStatus"></p>
+          </form>
+        </div>
+        <div class="contact-social">
+          <p class="social-intro" data-i18n="contact_social_intro">Find me across platforms</p>
+          <ul class="social-links" aria-label="Social media links">
+            <li>
+              <a href="https://www.youtube.com/@abdallamaher_1" target="_blank" rel="noopener" aria-label="YouTube">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31.3 31.3 0 0 0 0 12a31.3 31.3 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31.3 31.3 0 0 0 24 12a31.3 31.3 0 0 0-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg>
+                <span>YouTube</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/in/abdalla-maher-944529181" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.4h-3.6v-5.7c0-1.4 0-3.2-1.9-3.2s-2.2 1.5-2.2 3.1v5.8H9.1V8.3h3.5v1.6h.1c.5-.9 1.7-1.9 3.4-1.9 3.7 0 4.4 2.4 4.4 5.6v6.8zM5.3 6.8a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.4H3.6V8.3h3.5v12.1zM22.2 0H1.8C.8 0 0 .8 0 1.8v20.4c0 1 .8 1.8 1.8 1.8h20.4c1 0 1.8-.8 1.8-1.8V1.8c0-1-.8-1.8-1.8-1.8z"/></svg>
+                <span>LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/abdallamaher1993" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3C5.4.3 0 5.7 0 12.3c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.2-3.2-.1-.4-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.7.3 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9-.3.3-.6.8-.6 1.6v2.3c0 .3.2.7.8.6A12 12 0 0 0 24 12.3C24 5.7 18.6.3 12 .3z"/></svg>
+                <span>GitHub</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://abdalla480.wordpress.com/" target="_blank" rel="noopener" aria-label="WordPress">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zM1.7 12c0-1.5.3-3 .9-4.3L6.7 20C3.7 18.2 1.7 15.3 1.7 12zm10.3 10.3c-1 0-2-.2-2.9-.5L12 7.2l3 8.3c.1.2 0 .4-.1.5l-2.9 6.3zm1.5-11.3l2.8 7.6c.1.2 0 .4-.1.5-.9 1.9-2.1 3.5-3.7 4.7l2.6-16.3c1.3 1.9 2 4.2 2 6.7 0 4.5-2.4 8.4-6 10.5l1.4-13.8zm4.8-7.4c.8 1.9 1.3 4 1.3 6.2 0 5.3-3 9.9-7.3 12.1L17 5.3c.5.5.9 1 1.3 1.6z"/></svg>
+                <span>WordPress</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com/abdallamaher1993" target="_blank" rel="noopener" aria-label="Instagram">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+                <span>Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://space.bilibili.com/xxx" target="_blank" rel="noopener" aria-label="Bilibili">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="M8 4l-2-2M16 4l2-2"/><circle cx="9" cy="13" r="1.5" fill="currentColor" stroke="none"/><circle cx="15" cy="13" r="1.5" fill="currentColor" stroke="none"/></svg>
+                <span>Bilibili</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/xxx" target="_blank" rel="noopener" aria-label="X / Twitter">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.2 2h3.5l-7.7 8.8L22 22h-7.1l-4.8-6.3L4.4 22H.9l8.2-9.4L.7 2h7.3l4.3 5.7L18.2 2zm-1.2 18h1.9L6.4 4H4.4L17 20z"/></svg>
+                <span>X</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://facebook.com/xxx" target="_blank" rel="noopener" aria-label="Facebook">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12c0-6.6-5.4-12-12-12S0 5.4 0 12c0 6 4.4 10.9 10.1 11.8v-8.3H7.1V12h3V9.4c0-3 1.8-4.6 4.5-4.6 1.3 0 2.6.2 2.6.2v2.9h-1.5c-1.5 0-1.9.9-1.9 1.8V12h3.3l-.5 3.5h-2.8v8.3C19.6 22.9 24 18 24 12z"/></svg>
+                <span>Facebook</span>
+              </a>
+            </li>
+          </ul>
+          <div class="contact-email">
+            <a href="mailto:abdalla2.1993@gmail.com" aria-label="Email">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,4 12,13 2,4"/></svg>
+              abdalla2.1993@gmail.com
+            </a>
           </div>
-          <div class="form-field">
-            <label for="fsubject">الموضوع</label>
-            <input type="text" id="fsubject" name="_subject" required placeholder="موضوع رسالتك">
-          </div>
-          <div class="form-field">
-            <label for="fmessage">الرسالة</label>
-            <textarea id="fmessage" name="message" required rows="5" placeholder="اكتب رسالتك هنا..."></textarea>
-          </div>
-          <!-- FormSubmit config -->
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_template" value="table">
-          <input type="text" name="_honey" style="display:none">
-          <button type="submit" class="form-submit" id="formSubmit">أرسل الرسالة</button>
-        </form>
-        <div class="form-status" id="formStatus" role="alert" aria-live="polite"></div>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-  </main>
-
-  <!-- ═══ تذييل ═══ -->
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-accounts">
-        <a href="https://www.youtube.com/@abdallamaher_1" target="_blank" rel="noopener">YouTube</a>
-        <a href="https://github.com/abdallamaher1993" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://abdalla480.wordpress.com" target="_blank" rel="noopener">WordPress</a>
-        <a href="https://instagram.com/abdallamaher1993" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://www.linkedin.com/in/abdalla-maher-944529181" target="_blank" rel="noopener">LinkedIn</a>
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="nav-logo">A<span class="accent">.</span>M</span>
+          <p data-i18n="footer_desc">AI Video Producer &amp; Storyteller</p>
+        </div>
+        <div class="footer-links">
+          <a href="#about" data-i18n="nav_about">About</a>
+          <a href="#services" data-i18n="nav_services">Services</a>
+          <a href="#work" data-i18n="nav_work">Work</a>
+          <a href="#contact" data-i18n="nav_contact">Contact</a>
+        </div>
+        <div class="footer-copy">
+          <p>&copy; <span id="footerYear"></span> Abdalla Maher</p>
+        </div>
       </div>
-      <p class="footer-copy">© <span id="footerYear"></span> عبدالله ماهر — صُنع بشغف وذكاء اصطناعي</p>
     </div>
   </footer>
 
-  <!-- زر العودة للأعلى -->
-  <button class="back-top" id="backTop" aria-label="العودة للأعلى">↑</button>
-
-  <script src="./js/main.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
