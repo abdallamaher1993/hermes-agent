@@ -104,6 +104,19 @@ const I18N = {
     work_p8_title: 'Branded AI Ads',
     work_p8_desc: 'AI-generated advertisement content for brands — combining product storytelling with cinematic AI visuals to create scroll-stopping, engagement-driving campaigns.',
 
+    /* Articles / Latest posts */
+    articles_title: 'Latest Articles',
+    articles_read: 'Read',
+    article1_tag: 'Brand',
+    article1_title: 'Character Consistency',
+    article1_desc: 'How I keep one character consistent across AI-generated videos — LoRA lock, frozen style, node-chain flow.',
+    article2_tag: 'Retention',
+    article2_title: 'TikTok Retention Hooks',
+    article2_desc: 'The first 10 seconds that keep viewers watching — 6 retention hooks for AI short-form.',
+    article3_tag: 'Ad · Product',
+    article3_title: 'Product-First AI Ads',
+    article3_desc: 'How to make the product the hero of every frame — a 5-step framework for AI ads that convert.',
+
     /* Project detail page */
     project_back: 'Back to Work',
     project_about: 'About this project',
@@ -261,6 +274,19 @@ const I18N = {
     work_p8_title: 'إعلانات ذكاء اصطناعي تجارية',
     work_p8_desc: 'محتوى إعلاني بتقنيات الذكاء الاصطناعي للعلامات التجارية — يجمع سرد قصة المنتج مع المشاهد السينمائية لإنتاج حملات توقف التمرير وتزيد التفاعل.',
 
+    /* Articles / Latest posts */
+    articles_title: 'أحدث المقالات',
+    articles_read: 'اقرأ',
+    article1_tag: 'علامة',
+    article1_title: 'ثبات الشخصية',
+    article1_desc: 'كيف أُبقِي الشخصية نفسها متسقة عبر فيديوهات الذكاء الاصطناعي — قفل LoRA، أسلوب مجمّد، سير عقد.',
+    article2_tag: 'احتفاظ',
+    article2_title: 'خطافات الاحتفاظ في TikTok',
+    article2_desc: 'أول 10 ثوانٍ تُبقي المشاهدين — 6 خطافات احتفاظ للفيديو القصير بالذكاء الاصطناعي.',
+    article3_tag: 'إعلان · منتج',
+    article3_title: 'إعلانات بمنتج أولاً',
+    article3_desc: 'كيف تجعل المنتج بطل كل إطار — إطار عمل من 5 خطوات لإعلانات ذكاء اصطناعي تُحوّل.',
+
     /* Project detail page */
     project_back: 'العودة إلى الأعمال',
     project_about: 'عن هذا المشروع',
@@ -417,6 +443,19 @@ const I18N = {
     work_p8_tag: '品牌',
     work_p8_title: '品牌 AI 廣告',
     work_p8_desc: '為品牌打造的 AI 生成廣告內容——融合產品敘事與電影級 AI 視覺，創造讓人停下拇指、驅動互動的行銷作品。',
+
+    /* Articles / Latest posts */
+    articles_title: '最新文章',
+    articles_read: '閱讀',
+    article1_tag: '品牌',
+    article1_title: '角色一致性',
+    article1_desc: '如何在 AI 影片中讓同一個角色保持一致——LoRA 鎖定、凍結風格、節點流程。',
+    article2_tag: '留存',
+    article2_title: 'TikTok 留存鉤子',
+    article2_desc: '留住觀眾的前 10 秒——適用於 AI 短影音的 6 個留存鉤子。',
+    article3_tag: '廣告 · 產品',
+    article3_title: '產品優先 AI 廣告',
+    article3_desc: '如何讓產品成為每一幀的主角——讓 AI 廣告轉化的 5 步框架。',
 
     /* Project detail page */
     project_back: '返回作品',

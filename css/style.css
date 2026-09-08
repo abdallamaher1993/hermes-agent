@@ -609,6 +609,53 @@ section {
 @media (max-width: 768px) { .latest-row { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 480px) { .latest-row { grid-template-columns: 1fr; } }
 
+/* ===================== ARTICLES / LATEST POSTS ===================== */
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+}
+.article-card {
+  background: var(--c-bg-alt);
+  border: 1px solid var(--c-grid);
+  padding: 30px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: border-color var(--transition), transform 0.3s ease;
+}
+.article-card:hover { border-color: var(--c-accent-on-dark); transform: translateY(-3px); }
+.article-tag {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--c-accent-on-dark);
+}
+.article-card h3 {
+  font-size: 20px;
+  color: var(--c-white);
+  line-height: 1.25;
+}
+.article-card p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--c-text-dim);
+  flex: 1;
+}
+.article-link {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--c-accent-on-dark);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+@media (max-width: 1280px) { .articles-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 768px) { .articles-grid { grid-template-columns: 1fr; } }
+
 
 html[dir="rtl"] {
   --f-body: 'IBM Plex Sans Arabic', 'IBM Plex Sans', 'Noto Sans TC', sans-serif;
