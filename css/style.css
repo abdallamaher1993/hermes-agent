@@ -542,57 +542,8 @@ section {
   color: var(--c-text-dim);
 }
 
-/* ===================== TESTIMONIALS ===================== */
-.testimonials-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1px;
-}
-.testimonial-card {
-  background: var(--c-bg-alt);
-  border: 1px solid var(--c-grid);
-  padding: 40px 32px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  position: relative;
-  transition: border-color var(--transition), transform var(--transition), background var(--transition);
-}
-.testimonial-card::before {
-  content: '“';
-  font-family: var(--f-heading);
-  font-size: 64px;
-  line-height: 1;
-  color: var(--c-accent-on-dark);
-  opacity: 0.35;
-  position: absolute;
-  top: 16px;
-  right: 24px;
-}
-.testimonial-card blockquote {
-  font-size: 17px;
-  line-height: 1.7;
-  color: var(--c-text);
-  font-style: italic;
-  flex: 1;
-}
-.testimonial-card figcaption {
-  font-family: var(--f-mono);
-  font-size: 12px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--c-text-dim);
-  padding-top: 16px;
-  border-top: 1px solid var(--c-grid);
-}
-/* Micro-interaction: lift + accent border on hover */
-.testimonial-card:hover {
-  border-color: var(--c-accent-on-dark);
-  transform: translateY(-4px);
-}
-
 /* ===================== MICRO-INTERACTIONS ===================== */
-/* Staggered fade-in-up for work/testimonial/service cards */
+/* Staggered fade-in-up for cards */
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
@@ -738,8 +689,6 @@ html[lang="zh-TW"] {
   .project-img-wrap { aspect-ratio: 16/9; }
 
   .skills-grid { grid-template-columns: 1fr; }
-  .testimonials-grid { grid-template-columns: 1fr; }
-  .testimonial-card { padding: 32px 24px; }
 
   .contact-grid { grid-template-columns: 1fr; gap: 32px; }
   .contact-social {

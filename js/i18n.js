@@ -121,16 +121,6 @@ const I18N = {
     story_p7: 'An episodic sci-fi series following a time traveler\'s secret journal. Each episode visits a different era, and each confession reveals the cost of witnessing history unfold. Part mystery, part elegy — built for those who love history and science fiction in equal measure.',
     story_p8: 'AI-generated advertisement content for brands. Product storytelling fused with cinematic AI visuals — hero shots, brand worlds, and scroll-stopping sequences engineered to drive engagement and brand recall. A full production pipeline from concept to cut.',
 
-    /* Testimonials (placeholders — replace with real client notes) */
-    testimonials_title: 'Testimonials',
-    testimonials_intro: 'What collaborators say',
-    testi_1_text: 'Abdalla delivers AI film work at a pace and quality we had not seen before. The pipeline he built took us from storyboard to finished cut in days.',
-    testi_1_role: 'Content Lead · Documentary Series',
-    testi_2_text: 'A rare combination — technical mastery of AI generation tools and a genuine sense of story. The visuals were stunning, and the narrative held.',
-    testi_2_role: 'Producer · Branded Content',
-    testi_3_text: 'Reliable, fast, and consistent across platforms. He adapts the same project into different formats without losing its identity.',
-    testi_3_role: 'Channel Manager · Online Media',
-
     /* Skills */
     skills_title: 'Skills',
     skills_pipeline_title: 'Production Pipeline',
@@ -288,16 +278,6 @@ const I18N = {
     story_p7: 'سلسلة خيال علمي حلقة تتبع يوميات مسافر عبر الزمن السرية. كل حلقة تزور حقبة مختلفة، وكل اعتراف يكشف ثمن مشاهدة التاريخ وهو يتكشف. جزء غموض، جزء مرثية — مصممة لمن يحب التاريخ والخيال العلمي معًا.',
     story_p8: 'محتوى إعلاني بتقنيات الذكاء الاصطناعي للعلامات التجارية. سرد قصة المنتج يندمج مع مشاهد سينمائية — لقطات بطولية، عوالم علامة، وتسلسلات توقف التمرير مصممة لزيادة التفاعل واستدعاء العلامة. خط إنتاج كامل من الفكرة إلى المونتاج.',
 
-    /* Testimonials (placeholders — replace with real client notes) */
-    testimonials_title: 'آراء العملاء',
-    testimonials_intro: 'ماذا يقول المتعاونون',
-    testi_1_text: 'يُسلّم عبدالله أعمال فيلمية بالذكاء الاصطناعي بوتيرة وجودة لم نرها من قبل. خط الإنتاج الذي بناه أخذنا من لوحة القصة إلى المونتاج النهائي في أيام.',
-    testi_1_role: 'مسؤول المحتوى · سلسلة وثائقية',
-    testi_2_text: 'مزيج نادر — إتقان تقني لأدوات التوليد الذكي وحسّ سردي حقيقي. الصور كانت مذهلة، والسرد متماسك.',
-    testi_2_role: 'منتج · محتوى تجاري',
-    testi_3_text: 'موثوق وسريع ومتسق عبر المنصات. يحوّل المشروع نفسه إلى صيغ مختلفة دون أن يفقد هويته.',
-    testi_3_role: 'مدير قناة · إعلام رقمي',
-
     /* Skills */
     skills_title: 'المهارات',
     skills_pipeline_title: 'خط الإنتاج',
@@ -454,16 +434,6 @@ const I18N = {
     story_p6: '以霓虹浸染的動漫系列，靈感來自埃及智慧之神托特。賽博龐克美學與古老神話碰撞——書吏符號化為霓虹看板、神廟化為未來城，主角書寫現實成真。深植於神話的未來視覺奇觀。',
     story_p7: '單元式科幻系列，追隨時空旅人的秘密日誌。每集造訪一個時代，每段告白揭露見證歷史的代價。既是懸疑，也是輓歌——獻給同樣熱愛歷史與科幻的觀眾。',
     story_p8: '為品牌打造的 AI 生成廣告內容。產品敘事與電影級 AI 視覺融合——英雄鏡頭、品牌世界、扣人心弦的序列，驅動互動與品牌記憶。從概念到剪輯的完整產線。',
-
-    /* Testimonials (placeholders — replace with real client notes) */
-    testimonials_title: '客戶評價',
-    testimonials_intro: '合作夥伴怎麼說',
-    testi_1_text: 'Abdalla 以我們前所未見的速度與品質交付 AI 影片工作。他打造的產線幾天內就帶我們從分鏡到完成剪輯。',
-    testi_1_role: '內容主管 · 紀錄片系列',
-    testi_2_text: '罕見的組合——對 AI 生成工具的技術掌握，加上真正的敘事感。視覺令人驚豔，故事也站得住腳。',
-    testi_2_role: '製作人 · 品牌內容',
-    testi_3_text: '可靠、快速，且跨平台保持一致性。他把同一個專案轉換成不同格式，卻不失去其識別度。',
-    testi_3_role: '頻道經理 · 數位媒體',
 
     /* Skills */
     skills_title: '技能',

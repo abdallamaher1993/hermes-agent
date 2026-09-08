@@ -137,7 +137,7 @@
 
   /* ---- Intersection Observer for fade-in (staggered cards) ---- */
   if ('IntersectionObserver' in window) {
-    var revealTargets = document.querySelectorAll('section, .project-card, .testimonial-card, .service-card, .skill-group');
+    var revealTargets = document.querySelectorAll('section, .project-card, .service-card, .skill-group');
     var observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
@@ -148,7 +148,7 @@
     }, { threshold: 0.08 });
 
     revealTargets.forEach(function (s) {
-      if (s.classList.contains('project-card') || s.classList.contains('testimonial-card') || s.classList.contains('service-card') || s.classList.contains('skill-group')) {
+      if (s.classList.contains('project-card') || s.classList.contains('service-card') || s.classList.contains('skill-group')) {
         s.style.opacity = '0';
         s.style.transform = 'translateY(20px)';
         s.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
