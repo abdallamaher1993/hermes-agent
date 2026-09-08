@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About &amp; Services — Abdalla Maher</title>
+  <meta name="description" content="About Abdalla Maher — AI video producer, documentary filmmaker, and storyteller. Services: AI video production, documentary filmmaking, narrative series, branded content.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .about-page-hero { padding-top: 120px; }
+    .about-page-hero .container { max-width: 880px; }
+    .about-page-hero h1 { margin-bottom: 20px; }
+    .about-page-hero .lead { font-size: 19px; line-height: 1.8; color: var(--c-text-dim); }
+    .bio { padding-top: 0; }
+    .bio .container { max-width: 720px; }
+    .bio p { font-size: 16px; line-height: 1.85; color: var(--c-text-dim); margin-bottom: 20px; }
+    .bio h2 { margin: 32px 0 16px; font-size: clamp(20px,3vw,28px); }
+    .bio h2::after { content:''; display:block; width:40px; height:1px; background: var(--c-accent); margin-top:12px; }
+    .svc { padding-top: 0; }
+    .svc .container { max-width: 1080px; }
+    .svc-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 1px; }
+    .svc-item { background: var(--c-bg-alt); border: 1px solid var(--c-grid); padding: 36px 30px; transition: all var(--transition); }
+    .svc-item:hover { border-color: var(--c-accent-on-dark); transform: translateY(-3px); }
+    .svc-item .num { font-family: var(--f-mono); font-size: 13px; color: var(--c-accent-on-dark); margin-bottom: 12px; }
+    .svc-item h3 { font-size: 20px; margin-bottom: 12px; }
+    .svc-item p { font-size: 14px; line-height: 1.75; color: var(--c-text-dim); }
+    .stack { padding-top: 0; }
+    .stack-list { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; }
+    .stack-item { background: var(--c-bg-alt); border: 1px solid var(--c-grid); padding: 24px 22px; }
+    .stack-item h4 { font-size: 15px; margin-bottom: 10px; color: var(--c-white); }
+    .stack-item p { font-size: 13px; color: var(--c-text-dim); line-height: 1.6; }
+    .cta-band { padding-top: 0; }
+    .cta-box { border: 1px solid var(--c-grid); background: var(--c-bg-alt); padding: 48px 32px; text-align: center; }
+    .cta-box h2 { margin-bottom: 12px; }
+    .cta-box p { margin: 0 auto 24px; color: var(--c-text-dim); }
+    @media (max-width:768px){ .svc-grid,.stack-list{grid-template-columns:1fr;} .about-page-hero{padding-top:96px;} }
+  </style>
+</head>
+<body>
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="nav-inner container">
+      <a href="index.html" class="nav-logo" aria-label="Home">A<span class="accent">.</span>M</a>
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+        <li><a href="#bio" data-i18n="nav_about">About</a></li>
+        <li><a href="#services" data-i18n="nav_services">Services</a></li>
+        <li><a href="index.html#work" data-i18n="nav_work">Work</a></li>
+        <li><a href="index.html#contact" data-i18n="nav_contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="lang-switcher" role="group" aria-label="Language switcher">
+          <button class="lang-btn active" data-lang="en" aria-label="English">EN</button>
+          <button class="lang-btn" data-lang="ar" aria-label="العربية">ع</button>
+          <button class="lang-btn" data-lang="zh-TW" aria-label="繁體中文">繁</button>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="about-page-hero">
+    <div class="container">
+      <span class="section-num">01</span>
+      <h1 data-i18n="about_hero_title">About &amp; Services</h1>
+      <p class="lead" data-i18n="about_hero_lead">A cinematic AI storyteller turning history, myth, and imagination into films that move people.</p>
+    </div>
+  </section>
+
+  <section class="bio" id="bio">
+    <div class="container">
+      <h2 data-i18n="about_bio_title">The Story</h2>
+      <p data-i18n="about_p1">I am Abdalla Maher — an AI video producer, documentary filmmaker, and digital storyteller based in Taiwan. I specialize in crafting cinematic AI-generated content that bridges history, culture, and imagination.</p>
+      <p data-i18n="about_p2">With a background in narrative filmmaking and AI-powered production, I create content that transforms complex stories into visually stunning experiences — from ancient Egyptian epics to futuristic anime, from historical documentaries to branded AI advertisements.</p>
+      <p data-i18n="about_p3">My work spans six platforms and reaches audiences worldwide, combining cutting-edge AI tools with traditional storytelling craft to produce content that is both technically impressive and emotionally resonant.</p>
+      <h2 data-i18n="about_approach_title">How I Work</h2>
+      <p data-i18n="about_approach">Every project starts with a story worth telling. I design a production pipeline that fuses script, AI visual generation, voice, and sound into a single cinematic language — then carry it from first frame to final cut with the same obsessive attention to pacing, tone, and detail.</p>
+    </div>
+  </section>
+
+  <section class="svc" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2 class="section-title" data-i18n="services_title">Services</h2>
+      </div>
+      <div class="svc-grid">
+        <div class="svc-item"><span class="num">01</span><h3 data-i18n="services_s1_title">AI Video Production</h3><p data-i18n="services_s1_desc">End-to-end AI-generated video creation — from concept and scripting through AI-driven visual generation, voiceover, and post-production. Delivering cinema-quality content at unprecedented speed.</p></div>
+        <div class="svc-item"><span class="num">02</span><h3 data-i18n="services_s2_title">Documentary Filmmaking</h3><p data-i18n="services_s2_desc">AI-enhanced documentary production that brings historical events to life with cinematic realism. Combining archival research with AI-generated reenactments for compelling non-fiction narratives.</p></div>
+        <div class="svc-item"><span class="num">03</span><h3 data-i18n="services_s3_title">Narrative Series</h3><p data-i18n="services_s3_desc">Episodic storytelling across genres — from anime-style historical fiction to time-travel narratives. Building audience engagement through serialized content with consistent visual identity.</p></div>
+        <div class="svc-item"><span class="num">04</span><h3 data-i18n="services_s4_title">Branded AI Content</h3><p data-i18n="services_s4_desc">AI-generated advertisements and branded content that combine product storytelling with visual innovation. Creating scroll-stopping content that drives engagement and brand recall.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stack">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">03</span>
+        <h2 class="section-title" data-i18n="stack_title">Tools &amp; Stack</h2>
+      </div>
+      <div class="stack-list">
+        <div class="stack-item"><h4 data-i18n="stack_visual">Visual Generation</h4><p>Kling AI · Runway · Pika · Midjourney · DALL-E</p></div>
+        <div class="stack-item"><h4 data-i18n="stack_audio">Audio &amp; Voice</h4><p>ElevenLabs · Suno</p></div>
+        <div class="stack-item"><h4 data-i18n="stack_edit">Editing &amp; Post</h4><p>DaVinci Resolve · Premiere · After Effects · Blender</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container">
+      <div class="cta-box">
+        <h2 data-i18n="cta_title">Let's make something cinematic</h2>
+        <p data-i18n="cta_desc">Tell me about your story, your brand, or your next project.</p>
+        <a href="index.html#contact" class="btn btn-primary" data-i18n="hero_cta2">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="nav-logo">A<span class="accent">.</span>M</span>
+          <p data-i18n="footer_desc">AI Video Producer &amp; Storyteller</p>
+        </div>
+        <div class="footer-copy"><p>&copy; <span id="footerYear"></span> Abdalla Maher</p></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

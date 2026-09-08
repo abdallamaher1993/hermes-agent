@@ -9,6 +9,20 @@ const I18N = {
     nav_work: 'Work',
     nav_skills: 'Skills',
     nav_contact: 'Contact',
+    nav_home: 'Home',
+
+    /* About detail page */
+    about_hero_title: 'About & Services',
+    about_hero_lead: 'A cinematic AI storyteller turning history, myth, and imagination into films that move people.',
+    about_bio_title: 'The Story',
+    about_approach_title: 'How I Work',
+    about_approach: 'Every project starts with a story worth telling. I design a production pipeline that fuses script, AI visual generation, voice, and sound into a single cinematic language — then carry it from first frame to final cut with the same obsessive attention to pacing, tone, and detail.',
+    stack_title: 'Tools & Stack',
+    stack_visual: 'Visual Generation',
+    stack_audio: 'Audio & Voice',
+    stack_edit: 'Editing & Post',
+    cta_title: "Let's make something cinematic",
+    cta_desc: 'Tell me about your story, your brand, or your next project.',
 
     /* Hero */
     hero_label: 'AI Video Producer & Storyteller',
@@ -50,6 +64,7 @@ const I18N = {
     work_title: 'Work',
     work_watch: 'Watch',
     work_view: 'View Project',
+    latest_videos: 'Latest Uploads',
     work_p1_tag: 'Documentary',
     work_p1_title: 'Pharaonic Anime',
     work_p1_desc: 'An anime-style retelling of ancient Egyptian history — merging pharaonic grandeur with Japanese animation aesthetics for a visually epic narrative.',
@@ -147,6 +162,20 @@ const I18N = {
     nav_work: 'الأعمال',
     nav_skills: 'المهارات',
     nav_contact: 'التواصل',
+    nav_home: 'الرئيسية',
+
+    /* About detail page */
+    about_hero_title: 'نبذة والخدمات',
+    about_hero_lead: 'روائي سينمائي بالذكاء الاصطناعي يحوّل التاريخ والأسطورة والخيال إلى أفلام تلامس القلوب.',
+    about_bio_title: 'القصة',
+    about_approach_title: 'كيف أعمل',
+    about_approach: 'كل مشروع يبدأ بقصة تستحق أن تُروى. أصمّم خط إنتاج يدمج السيناريو وتوليد المشاهد بالذكاء الاصطناعي والصوت في لغة سينمائية واحدة — ثم أنقله من أول لقطة إلى المونتاج النهائي بالعناية نفسها بالإيقاع والنبرة والتفاصيل.',
+    stack_title: 'الأدوات والتقنيات',
+    stack_visual: 'توليد المشاهد',
+    stack_audio: 'الصوت والتعليق',
+    stack_edit: 'المونتاج وما بعده',
+    cta_title: 'لنصنع شيئًا سينمائيًا',
+    cta_desc: 'أخبرني عن قصتك أو علامتك أو مشروعك القادم.',
 
     /* Hero */
     hero_label: 'منتج فيديو بالذكاء الاصطناعي وروائي بصري',
@@ -188,6 +217,7 @@ const I18N = {
     work_title: 'الأعمال',
     work_watch: 'مشاهدة',
     work_view: 'عرض المشروع',
+    latest_videos: 'أحدث الإصدارات',
     work_p1_tag: 'وثائقي',
     work_p1_title: 'أنمي الفراعنة',
     work_p1_desc: 'إعادة سرد تاريخ مصر القديمة بأسلوب الأنمي — دمج عظمة الفراعنة مع جماليات الرسوم المتحركة اليابانية في سرد ملحمي مبهر.',
@@ -285,6 +315,20 @@ const I18N = {
     nav_work: '作品',
     nav_skills: '技能',
     nav_contact: '聯絡',
+    nav_home: '首頁',
+
+    /* About detail page */
+    about_hero_title: '關於與服務',
+    about_hero_lead: '以 AI 打造電影級敘事的說故事人，將歷史、神話與想像化為觸動人心的影片。',
+    about_bio_title: '故事',
+    about_approach_title: '我的工作方式',
+    about_approach: '每個專案都從一個值得訴說的故事開始。我設計一條製作管線，將腳本、AI 視覺生成、配音與聲音融為單一電影語言——然後從第一格到最終剪輯，我對節奏、調性與細節始終保持同樣的專注。',
+    stack_title: '工具與技術',
+    stack_visual: '視覺生成',
+    stack_audio: '音效與配音',
+    stack_edit: '剪輯與後期',
+    cta_title: '讓我們打造電影級作品',
+    cta_desc: '告訴我你的故事、你的品牌，或你的下一個專案。',
 
     /* Hero */
     hero_label: 'AI 影片製作人 · 敘事藝術家',
@@ -326,6 +370,7 @@ const I18N = {
     work_title: '作品',
     work_watch: '觀看',
     work_view: '檢視專案',
+    latest_videos: '最新上傳',
     work_p1_tag: '紀錄片',
     work_p1_title: '法老動漫',
     work_p1_desc: '以動漫風格重述古埃及歷史——將法老的宏偉與日式動畫美學融合，打造視覺史詩級敘事。',
@@ -415,4 +460,12 @@ const I18N = {
     page_404_desc: '您所尋找的頁面不存在或已被移動。',
     page_404_back: '返回首頁'
   }
+};
+
+/* Helper: resolve a key in the currently-active language (fallback EN) */
+I18N.current = function (key) {
+  var lang = (document.documentElement.getAttribute('lang') || 'en');
+  var s = I18N[lang];
+  if (s && s[key] !== undefined) { return s[key]; }
+  return I18N.en[key] !== undefined ? I18N.en[key] : key;
 };
