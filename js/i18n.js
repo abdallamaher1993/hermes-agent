@@ -49,6 +49,7 @@ const I18N = {
     /* Work */
     work_title: 'Work',
     work_watch: 'Watch',
+    work_view: 'View Project',
     work_p1_tag: 'Documentary',
     work_p1_title: 'Pharaonic Anime',
     work_p1_desc: 'An anime-style retelling of ancient Egyptian history — merging pharaonic grandeur with Japanese animation aesthetics for a visually epic narrative.',
@@ -73,6 +74,33 @@ const I18N = {
     work_p8_tag: 'Branded',
     work_p8_title: 'Branded AI Ads',
     work_p8_desc: 'AI-generated advertisement content for brands — combining product storytelling with cinematic AI visuals to create scroll-stopping, engagement-driving campaigns.',
+
+    /* Project detail page */
+    project_back: 'Back to Work',
+    project_about: 'About this project',
+    project_watch_yt: 'Watch on YouTube',
+    project_related: 'More Projects',
+    project_year: 'Year',
+
+    /* Work — long stories (project detail pages) */
+    story_p1: 'A full anime-style retelling of ancient Egyptian history, produced with AI generation tools. Each scene blends pharaonic iconography with Japanese animation aesthetics — hieroglyphs re-lit like neon, temples staged like anime backdrops, and a color palette that moves between gold and shadow. The series carries viewers from the Two Lands through the unification myth, told as an episodic visual poem.',
+    story_p2: 'A cinematic AI recreation of the Titanic\'s final voyage. The film rebuilds the ship and its passengers through AI generation, honoring the historical record while letting the visuals breathe with dramatic, elegiac pacing — deck by deck, from the grand staircase to the frozen Atlantic. Blends archival accuracy with a modern documentary voice.',
+    story_p3: 'An immersive AI-rendered documentary on the Chernobyl disaster. Atmospheric, haunted, and carefully researched — the reactor, the exclusion zone, and the human cost rendered in a desaturated, almost radioactive palette that conveys the scale of history\'s worst nuclear accident without sensationalism.',
+    story_p4: 'An epic AI-generated series on the rise of civilization, from Mesopotamia to the Nile. Cinematic scope meets anthropological depth — ziggurats, floodplains, and the first cities staged as monumental tableaux. A visual history lesson built to make the ancient world feel immediate.',
+    story_p5: 'A unique fusion of Minecraft\'s blocky visual language with cinematic storytelling. Through AI-driven production, voxel worlds become emotionally rich narratives — torchlight, redstone, and endless plains staged like a live-action film, proving that a game engine and a camera can share a voice.',
+    story_p6: 'A neon-drenched anime series inspired by Thoth, the Egyptian god of wisdom. Cyberpunk aesthetics collide with ancient mythology — scribal glyphs as neon signage, temples as arcologies, and a protagonist who writes reality into being. A futuristic visual spectacle rooted in deep myth.',
+    story_p7: 'An episodic sci-fi series following a time traveler\'s secret journal. Each episode visits a different era, and each confession reveals the cost of witnessing history unfold. Part mystery, part elegy — built for those who love history and science fiction in equal measure.',
+    story_p8: 'AI-generated advertisement content for brands. Product storytelling fused with cinematic AI visuals — hero shots, brand worlds, and scroll-stopping sequences engineered to drive engagement and brand recall. A full production pipeline from concept to cut.',
+
+    /* Testimonials (placeholders — replace with real client notes) */
+    testimonials_title: 'Testimonials',
+    testimonials_intro: 'What collaborators say',
+    testi_1_text: 'Abdalla delivers AI film work at a pace and quality we had not seen before. The pipeline he built took us from storyboard to finished cut in days.',
+    testi_1_role: 'Content Lead · Documentary Series',
+    testi_2_text: 'A rare combination — technical mastery of AI generation tools and a genuine sense of story. The visuals were stunning, and the narrative held.',
+    testi_2_role: 'Producer · Branded Content',
+    testi_3_text: 'Reliable, fast, and consistent across platforms. He adapts the same project into different formats without losing its identity.',
+    testi_3_role: 'Channel Manager · Online Media',
 
     /* Skills */
     skills_title: 'Skills',
@@ -159,6 +187,7 @@ const I18N = {
     /* Work */
     work_title: 'الأعمال',
     work_watch: 'مشاهدة',
+    work_view: 'عرض المشروع',
     work_p1_tag: 'وثائقي',
     work_p1_title: 'أنمي الفراعنة',
     work_p1_desc: 'إعادة سرد تاريخ مصر القديمة بأسلوب الأنمي — دمج عظمة الفراعنة مع جماليات الرسوم المتحركة اليابانية في سرد ملحمي مبهر.',
@@ -183,6 +212,33 @@ const I18N = {
     work_p8_tag: 'تجاري',
     work_p8_title: 'إعلانات ذكاء اصطناعي تجارية',
     work_p8_desc: 'محتوى إعلاني بتقنيات الذكاء الاصطناعي للعلامات التجارية — يجمع سرد قصة المنتج مع المشاهد السينمائية لإنتاج حملات توقف التمرير وتزيد التفاعل.',
+
+    /* Project detail page */
+    project_back: 'العودة إلى الأعمال',
+    project_about: 'عن هذا المشروع',
+    project_watch_yt: 'شاهد على يوتيوب',
+    project_related: 'مشاريع أخرى',
+    project_year: 'السنة',
+
+    /* Work — long stories (project detail pages) */
+    story_p1: 'إعادة سرد كاملة لتاريخ مصر القديمة بأسلوب الأنمي، مُنتجة بأدوات الذكاء الاصطناعي. كل مشهد يمزج الأيقونات الفرعونية مع جماليات الرسوم اليابانية — رموز مضاءة كالنيون، معابد صُوّرت كخلفيات أنمي، ولوحة لونية تتنقل بين الذهب والظل. تنقل السلسلة المشاهد من الأرضين عبر أسطورة التوحيد، حكاية شعرية حلقة تتبع أخرى.',
+    story_p2: 'إعادة سينمائية بتقنيات الذكاء الاصطناعي لرحلة التيتانيك الأخيرة. يُعيد الفيلم بناء السفينة وركابها عبر التوليد الذكي، محترمًا السجل التاريخي فيما تتنفس الصور بإيقاع درامي حزين — طابقًا طابقًا، من السلم الكبير إلى الأطلسي المتجمد. مزيج من الدقة الأرشيفية وصوت وثائقي عصري.',
+    story_p3: 'فيلم وثائقي غامر بتقنيات الذكاء الاصطناعي عن كارثة تشرنوبيل. أجواء مشوقة وحزينة وبحث دقيق — المفاعل، منطقة العزل، والتكلفة الإنسانية المرسومة بلوحة شبه إشعاعية توصل حجم أسوأ حادث نووي في التاريخ دون إثارة.',
+    story_p4: 'سلسلة ملحمية بتقنيات الذكاء الاصطناعي حول نشوء الحضارة، من بلاد الرافدين إلى وادي النيل. مدى سينمائي يلتقي عمقًا أنثروبولوجيًا — الزقورات، السهول الفيضية، وأول المدن مصوّرة كلوحات ضخمة. درس تاريخي بصري يجعل العالم القديم ملموسًا.',
+    story_p5: 'مزيج فريد بين لغة ماينكرافت المكعبة والسرد السينمائي. عبر إنتاج ذكي، تتحوّل العوالم إلى روايات غنية عاطفيًا — ضوء المشاعل، حجر الرايدستون، والسهول اللانهائية مصوّرة كفيلم واقعي، مثبّتًا أن لعبة وكاميرا يمكن أن تتشاركا صوتًا واحدًا.',
+    story_p6: 'سلسلة أنمي مغمورة بالنيون مستوحاة من تحوت إله الحكمة المصري. جماليات السايبربانك تصطدم بالأساطير القديمة — رموز الكتبة كإشارات نيون، المعابد كأبراج مستقبلية، وبطل يكتب الواقع إلى الوجود. مشهد بصري مستقبلي جذوره أسطورية عميقة.',
+    story_p7: 'سلسلة خيال علمي حلقة تتبع يوميات مسافر عبر الزمن السرية. كل حلقة تزور حقبة مختلفة، وكل اعتراف يكشف ثمن مشاهدة التاريخ وهو يتكشف. جزء غموض، جزء مرثية — مصممة لمن يحب التاريخ والخيال العلمي معًا.',
+    story_p8: 'محتوى إعلاني بتقنيات الذكاء الاصطناعي للعلامات التجارية. سرد قصة المنتج يندمج مع مشاهد سينمائية — لقطات بطولية، عوالم علامة، وتسلسلات توقف التمرير مصممة لزيادة التفاعل واستدعاء العلامة. خط إنتاج كامل من الفكرة إلى المونتاج.',
+
+    /* Testimonials (placeholders — replace with real client notes) */
+    testimonials_title: 'آراء العملاء',
+    testimonials_intro: 'ماذا يقول المتعاونون',
+    testi_1_text: 'يُسلّم عبدالله أعمال فيلمية بالذكاء الاصطناعي بوتيرة وجودة لم نرها من قبل. خط الإنتاج الذي بناه أخذنا من لوحة القصة إلى المونتاج النهائي في أيام.',
+    testi_1_role: 'مسؤول المحتوى · سلسلة وثائقية',
+    testi_2_text: 'مزيج نادر — إتقان تقني لأدوات التوليد الذكي وحسّ سردي حقيقي. الصور كانت مذهلة، والسرد متماسك.',
+    testi_2_role: 'منتج · محتوى تجاري',
+    testi_3_text: 'موثوق وسريع ومتسق عبر المنصات. يحوّل المشروع نفسه إلى صيغ مختلفة دون أن يفقد هويته.',
+    testi_3_role: 'مدير قناة · إعلام رقمي',
 
     /* Skills */
     skills_title: 'المهارات',
@@ -269,6 +325,7 @@ const I18N = {
     /* Work */
     work_title: '作品',
     work_watch: '觀看',
+    work_view: '檢視專案',
     work_p1_tag: '紀錄片',
     work_p1_title: '法老動漫',
     work_p1_desc: '以動漫風格重述古埃及歷史——將法老的宏偉與日式動畫美學融合，打造視覺史詩級敘事。',
@@ -293,6 +350,33 @@ const I18N = {
     work_p8_tag: '品牌',
     work_p8_title: '品牌 AI 廣告',
     work_p8_desc: '為品牌打造的 AI 生成廣告內容——融合產品敘事與電影級 AI 視覺，創造讓人停下拇指、驅動互動的行銷作品。',
+
+    /* Project detail page */
+    project_back: '返回作品',
+    project_about: '關於這個專案',
+    project_watch_yt: '在 YouTube 觀看',
+    project_related: '更多專案',
+    project_year: '年份',
+
+    /* Work — long stories (project detail pages) */
+    story_p1: '以動漫風格完整重述古埃及歷史，以 AI 生成工具製作。每個場景將法老圖騰與日式動畫美學交織——像霓虹一樣點亮的象形文字、如動漫背景般構築的神廟，以及游走於金色與陰影間的色調。系列帶領觀眾從兩地到統一的傳說，以單元視覺詩的形式娓娓道來。',
+    story_p2: 'AI 電影級重現鐵達尼號最後航程。影片以 AI 生成重建船隻與乘客，致敬歷史紀錄，同時讓畫面以戲劇性、哀婉的節奏呼吸——逐層甲板，從大階梯到結冰的大西洋。融合檔案考證與現代紀錄片語言。',
+    story_p3: 'AI 渲染的沉浸式紀錄片，呈現車諾比核災。氛圍詭譎、震撼人心且考證嚴謹——反應爐、隔離區與人性代價，以近乎放射性的褪色調呈現，傳達史上最嚴重核事故的規模而不流於煽情。',
+    story_p4: 'AI 生成的史詩系列，探索文明崛起——從美索不達米亞到尼羅河。電影級格局與人類學深度相遇——金字塔廟、沖積平原與最早的城市，以宏偉舞臺構築。一堂讓古代世界變得近在眼前的視覺歷史課。',
+    story_p5: 'Minecraft 方塊視覺語言與電影敘事的獨特融合。透過 AI 驅動製作，方塊世界成為情感豐富的敘事——火炬火光、紅石與無盡平原，以真人電影方式構築，證明遊戲引擎與鏡頭可以共用同一種聲音。',
+    story_p6: '以霓虹浸染的動漫系列，靈感來自埃及智慧之神托特。賽博龐克美學與古老神話碰撞——書吏符號化為霓虹看板、神廟化為未來城，主角書寫現實成真。深植於神話的未來視覺奇觀。',
+    story_p7: '單元式科幻系列，追隨時空旅人的秘密日誌。每集造訪一個時代，每段告白揭露見證歷史的代價。既是懸疑，也是輓歌——獻給同樣熱愛歷史與科幻的觀眾。',
+    story_p8: '為品牌打造的 AI 生成廣告內容。產品敘事與電影級 AI 視覺融合——英雄鏡頭、品牌世界、扣人心弦的序列，驅動互動與品牌記憶。從概念到剪輯的完整產線。',
+
+    /* Testimonials (placeholders — replace with real client notes) */
+    testimonials_title: '客戶評價',
+    testimonials_intro: '合作夥伴怎麼說',
+    testi_1_text: 'Abdalla 以我們前所未見的速度與品質交付 AI 影片工作。他打造的產線幾天內就帶我們從分鏡到完成剪輯。',
+    testi_1_role: '內容主管 · 紀錄片系列',
+    testi_2_text: '罕見的組合——對 AI 生成工具的技術掌握，加上真正的敘事感。視覺令人驚豔，故事也站得住腳。',
+    testi_2_role: '製作人 · 品牌內容',
+    testi_3_text: '可靠、快速，且跨平台保持一致性。他把同一個專案轉換成不同格式，卻不失去其識別度。',
+    testi_3_role: '頻道經理 · 數位媒體',
 
     /* Skills */
     skills_title: '技能',

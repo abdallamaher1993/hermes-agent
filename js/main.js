@@ -135,9 +135,9 @@
     }, { passive: true });
   }
 
-  /* ---- Intersection Observer for fade-in ---- */
+  /* ---- Intersection Observer for fade-in (staggered cards) ---- */
   if ('IntersectionObserver' in window) {
-    var sections = document.querySelectorAll('section');
+    var revealTargets = document.querySelectorAll('section, .project-card, .testimonial-card, .service-card, .skill-group');
     var observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
@@ -145,12 +145,18 @@
           entry.target.style.transform = 'translateY(0)';
         }
       });
-    }, { threshold: 0.1 });
+    }, { threshold: 0.08 });
 
-    sections.forEach(function (s) {
-      s.style.opacity = '0';
-      s.style.transform = 'translateY(24px)';
-      s.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    revealTargets.forEach(function (s) {
+      if (s.classList.contains('project-card') || s.classList.contains('testimonial-card') || s.classList.contains('service-card') || s.classList.contains('skill-group')) {
+        s.style.opacity = '0';
+        s.style.transform = 'translateY(20px)';
+        s.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+      } else {
+        s.style.opacity = '0';
+        s.style.transform = 'translateY(24px)';
+        s.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      }
       observer.observe(s);
     });
   }

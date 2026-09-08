@@ -542,7 +542,90 @@ section {
   color: var(--c-text-dim);
 }
 
-/* ===================== RTL (Arabic) ===================== */
+/* ===================== TESTIMONIALS ===================== */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+}
+.testimonial-card {
+  background: var(--c-bg-alt);
+  border: 1px solid var(--c-grid);
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  transition: border-color var(--transition), transform var(--transition), background var(--transition);
+}
+.testimonial-card::before {
+  content: '“';
+  font-family: var(--f-heading);
+  font-size: 64px;
+  line-height: 1;
+  color: var(--c-accent-on-dark);
+  opacity: 0.35;
+  position: absolute;
+  top: 16px;
+  right: 24px;
+}
+.testimonial-card blockquote {
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--c-text);
+  font-style: italic;
+  flex: 1;
+}
+.testimonial-card figcaption {
+  font-family: var(--f-mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--c-text-dim);
+  padding-top: 16px;
+  border-top: 1px solid var(--c-grid);
+}
+/* Micro-interaction: lift + accent border on hover */
+.testimonial-card:hover {
+  border-color: var(--c-accent-on-dark);
+  transform: translateY(-4px);
+}
+
+/* ===================== MICRO-INTERACTIONS ===================== */
+/* Staggered fade-in-up for work/testimonial/service cards */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.hidden-reveal { opacity: 0; }
+.reveal-in { animation: fadeInUp 0.5s ease forwards; }
+
+/* Magnetic-ish arrow slide on project link */
+.project-link svg { transition: transform var(--transition); }
+.project-link:hover svg { transform: translate(2px, -2px); }
+
+/* Card tilt-lift on work cards */
+.project-card {
+  transition: border-color var(--transition), transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+}
+
+/* Button press micro-interaction */
+.btn:active { transform: translateY(0) scale(0.98); }
+.btn-primary:active { background: #a3281c; }
+
+/* Hero title subtle shimmer on accent */
+@keyframes accentPulse { 0%,100% { opacity: 1; } 50% { opacity: 0.55; } }
+.nav-logo .accent { animation: accentPulse 3s ease-in-out infinite; }
+
+/* Icon hover bounce on stats (reset-safe, no layout shift) */
+.stat-num { transition: transform 0.3s ease, color 0.3s ease; }
+.stat:hover .stat-num { transform: translateY(-2px); color: var(--c-accent-on-dark); }
+
+
 html[dir="rtl"] {
   --f-body: 'IBM Plex Sans Arabic', 'IBM Plex Sans', 'Noto Sans TC', sans-serif;
   --f-heading: 'Amiri', 'IBM Plex Sans Arabic', serif;
@@ -622,6 +705,8 @@ html[lang="zh-TW"] {
   .project-img-wrap { aspect-ratio: 16/9; }
 
   .skills-grid { grid-template-columns: 1fr; }
+  .testimonials-grid { grid-template-columns: 1fr; }
+  .testimonial-card { padding: 32px 24px; }
 
   .contact-grid { grid-template-columns: 1fr; gap: 32px; }
   .contact-social {

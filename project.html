@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project — Abdalla Maher</title>
+  <meta name="description" content="Project detail — Abdalla Maher, cinematic AI storyteller.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Project detail page additions */
+    .project-hero { padding-top: 120px; }
+    .project-hero .container { max-width: 1080px; }
+    .project-back { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 32px; color: var(--c-text-dim); font-size: 13px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; transition: color var(--transition); }
+    .project-back:hover { color: var(--c-accent-on-dark); }
+    .project-badge { display: inline-block; font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--c-accent-on-dark); border: 1px solid var(--c-accent-dim); padding: 4px 10px; margin-bottom: 16px; }
+    .project-title { margin-bottom: 12px; }
+    .project-meta { display: flex; gap: 24px; flex-wrap: wrap; margin-bottom: 32px; color: var(--c-text-dim); font-size: 13px; font-family: var(--f-mono); letter-spacing: 0.04em; }
+    .project-meta span { display: inline-flex; align-items: center; gap: 6px; }
+    .video-frame { position: relative; width: 100%; aspect-ratio: 16/9; background: var(--c-bg-alt); border: 1px solid var(--c-grid); margin-bottom: 40px; overflow: hidden; }
+    .video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: none; }
+    .project-story-wrap { max-width: 680px; margin: 0 auto; }
+    .project-story-wrap h2 { font-size: clamp(20px, 3vw, 30px); margin-bottom: 20px; }
+    .project-story-wrap h2::after { content: ''; display: block; width: 40px; height: 1px; background: var(--c-accent); margin-top: 14px; }
+    .project-story-wrap p { font-size: 16px; line-height: 1.8; color: var(--c-text-dim); }
+    .project-actions { display: flex; gap: 16px; margin-top: 40px; flex-wrap: wrap; }
+    .btn-watch { display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; font-size: 14px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; border-radius: var(--radius); background: var(--c-accent); color: var(--c-white); transition: all var(--transition); }
+    .btn-watch:hover { background: #b92d20; transform: translateY(-1px); }
+    .related { padding-top: 0; }
+    .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; }
+    .related-item { background: var(--c-bg-alt); border: 1px solid var(--c-grid); padding: 24px; transition: all var(--transition); }
+    .related-item:hover { border-color: var(--c-accent-on-dark); }
+    .related-item h4 { font-size: 16px; margin: 8px 0 4px; }
+    .related-item p { font-size: 12px; color: var(--c-text-dim); }
+    @media (max-width: 768px) { .related-grid { grid-template-columns: 1fr; } .project-hero { padding-top: 96px; } }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="nav-inner container">
+      <a href="index.html" class="nav-logo" aria-label="Home">A<span class="accent">.</span>M</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">← <span data-i18n="nav_work">Work</span></a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="lang-switcher" role="group" aria-label="Language switcher">
+          <button class="lang-btn active" data-lang="en" aria-label="English">EN</button>
+          <button class="lang-btn" data-lang="ar" aria-label="العربية">ع</button>
+          <button class="lang-btn" data-lang="zh-TW" aria-label="繁體中文">繁</button>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="project-hero">
+    <div class="container">
+      <a href="index.html" class="project-back">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        <span data-i18n="project_back">Back to Work</span>
+      </a>
+      <span class="project-badge" id="projTag"></span>
+      <h1 class="project-title" id="projTitle"></h1>
+      <div class="project-meta" id="projMeta"></div>
+
+      <div class="video-frame">
+        <iframe id="projVideo" title="Project video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+
+      <div class="project-story-wrap">
+        <h2 data-i18n="project_about">About this project</h2>
+        <p id="projStory"></p>
+        <div class="project-actions">
+          <a id="projWatch" href="#" target="_blank" rel="noopener" class="btn-watch">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            <span data-i18n="project_watch_yt">Watch on YouTube</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="related">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">↳</span>
+        <h2 class="section-title" data-i18n="project_related">More Projects</h2>
+      </div>
+      <div class="related-grid" id="relatedGrid"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="nav-logo">A<span class="accent">.</span>M</span>
+          <p data-i18n="footer_desc">AI Video Producer &amp; Storyteller</p>
+        </div>
+        <div class="footer-copy"><p>&copy; <span id="footerYear"></span> Abdalla Maher</p></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/project.js"></script>
+</body>
+</html>
