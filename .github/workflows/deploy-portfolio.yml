@@ -1,11 +1,10 @@
 # ينشر موقع البورتفوليو على GitHub Pages تلقائيًا
-# الموقع موجود في مجلد portfolio-site/ على فرع portfolio
 name: Deploy Portfolio
 
 on:
   push:
     branches: [portfolio]
-    paths: ['portfolio-site/**']
+    paths: ['index.html', 'css/**', 'js/**', 'img/**', '404.html', 'favicon.svg']
 
 permissions:
   contents: read
@@ -17,7 +16,18 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  activate-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Activate GitHub Pages (idempotent)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh api repos/${{ github.repository }}/pages --method POST \
+            -f source.branch=portfolio -f source.path=/ 2>/dev/null || true
+
   deploy:
+    needs: activate-pages
     environment:
       name: github-pages
       url: ${{ steps.pages.outputs.page_url }}
@@ -29,7 +39,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: portfolio-site
+          path: .
       - name: Deploy to GitHub Pages
         id: pages
         uses: actions/deploy-pages@v4
