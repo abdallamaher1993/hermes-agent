@@ -20,6 +20,10 @@
     .bio p { font-size: 16px; line-height: 1.85; color: var(--c-text-dim); margin-bottom: 20px; }
     .bio h2 { margin: 32px 0 16px; font-size: clamp(20px,3vw,28px); }
     .bio h2::after { content:''; display:block; width:40px; height:1px; background: var(--c-accent); margin-top:12px; }
+    .edu-row { border: 1px solid var(--c-grid); background: var(--c-bg-alt); padding: 24px 28px; margin-top: 8px; }
+    .edu-degree { font-size: 18px; font-weight: 600; color: var(--c-white); margin-bottom: 6px; }
+    .edu-school { font-size: 15px; color: var(--c-text); margin-bottom: 8px; }
+    .edu-years { font-family: var(--f-mono); font-size: 13px; color: var(--c-accent-on-dark); letter-spacing: 0.04em; }
     .svc { padding-top: 0; }
     .svc .container { max-width: 1080px; }
     .svc-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 1px; }
@@ -80,6 +84,12 @@
       <p data-i18n="about_p3">My work spans six platforms and reaches audiences worldwide, combining cutting-edge AI tools with traditional storytelling craft to produce content that is both technically impressive and emotionally resonant.</p>
       <h2 data-i18n="about_approach_title">How I Work</h2>
       <p data-i18n="about_approach">Every project starts with a story worth telling. I design a production pipeline that fuses script, AI visual generation, voice, and sound into a single cinematic language — then carry it from first frame to final cut with the same obsessive attention to pacing, tone, and detail.</p>
+      <h2 data-i18n="about_education_title">Education</h2>
+      <div class="edu-row">
+        <div class="edu-degree" data-i18n="edu_degree">B.Sc. Finance &amp; Management Science</div>
+        <div class="edu-school" data-i18n="edu_school">Technology &amp; Development College, Egypt</div>
+        <div class="edu-years" data-i18n="edu_years">2014 — 2017</div>
+      </div>
     </div>
   </section>
 
