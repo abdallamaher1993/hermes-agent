@@ -1,0 +1,13 @@
+# Config for the "Broken links" CI job (lycheeverse/lychee-action).
+#
+# LinkedIn, X/Twitter, and Instagram are well-documented to block automated
+# HEAD/GET requests from CI runner IPs regardless of whether the link is
+# actually broken — excluding them avoids failing the build over a platform
+# blocking bots rather than a real dead link. Everything else (including the
+# site's own pages, YouTube, GitHub, Bilibili, Facebook, Freelancer,
+# WhatsApp, WordPress) is still checked normally.
+exclude = [
+  "^https://([a-z]+\\.)?linkedin\\.com",
+  "^https://(x|twitter)\\.com",
+  "^https://([a-z]+\\.)?instagram\\.com",
+]
