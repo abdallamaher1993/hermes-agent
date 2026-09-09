@@ -14,7 +14,6 @@
 (function () {
   'use strict';
 
-  var CHANNEL_ID = 'UCkMLbf6BLoqapmfbDECYVtQ';
   var PLAYLIST_ID = 'UUkMLbf6BLoqapmfbDECYVtQ';
 
   function init() {
