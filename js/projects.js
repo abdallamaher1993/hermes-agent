@@ -95,6 +95,7 @@ const PROJECTS = [
 ];
 
 /* Look up a project by its URL ?id= value */
+// eslint-disable-next-line no-unused-vars -- consumed as a global by project.js (no bundler/module system)
 function getProject(id) {
   return PROJECTS.find(function (p) { return p.id === id; });
 }
