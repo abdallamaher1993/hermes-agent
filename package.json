@@ -1,0 +1,18 @@
+{
+  "name": "hermes-agent-site",
+  "private": true,
+  "description": "Dev tooling for CI checks (HTML validity, CSS/JS lint) — this is a static site, no build step.",
+  "scripts": {
+    "check:html": "html-validate \"*.html\"",
+    "check:css": "stylelint \"css/**/*.css\"",
+    "check:js": "eslint \"js/**/*.js\"",
+    "check": "npm run check:html && npm run check:css && npm run check:js"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "html-validate": "^8.29.0",
+    "stylelint": "^16.26.0",
+    "stylelint-config-recommended": "^14.0.1"
+  }
+}
+
