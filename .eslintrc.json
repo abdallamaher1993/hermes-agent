@@ -1,0 +1,29 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "script"
+  },
+  "rules": {
+    "no-unused-vars": ["error", { "args": "none" }]
+  },
+  "overrides": [
+    {
+      "files": ["js/main.js", "js/project.js", "js/yt.js"],
+      "globals": { "I18N": "readonly" }
+    },
+    {
+      "files": ["js/project.js"],
+      "globals": { "PROJECTS": "readonly", "getProject": "readonly" }
+    },
+    {
+      "files": ["js/i18n.js"],
+      "rules": { "no-unused-vars": "off" }
+    }
+  ]
+}
