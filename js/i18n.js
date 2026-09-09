@@ -9,34 +9,6 @@ const I18N = {
     nav_work: 'Work',
     nav_skills: 'Skills',
     nav_contact: 'Contact',
-    nav_home: 'Home',
-
-    /* About detail page */
-    about_hero_title: 'About & Services',
-    about_hero_lead: 'A cinematic AI storyteller turning history, myth, and imagination into films that move people.',
-    about_bio_title: 'The Story',
-    about_approach_title: 'How I Work',
-    about_approach: 'Every project starts with a story worth telling. I design a production pipeline that fuses script, AI visual generation, voice, and sound into a single cinematic language — then carry it from first frame to final cut with the same obsessive attention to pacing, tone, and detail.',
-    about_education_title: 'Education',
-    edu_degree: 'B.Sc. Finance & Management Science',
-    edu_school: 'Technology & Development College, Egypt',
-    edu_years: '2014 — 2017',
-    about_experience_title: 'Experience',
-    exp1_role: 'Content Creator & Video Producer',
-    exp1_org: "TIME TRAVELER'S CONFESSIONS — YouTube Channel",
-    exp1_years: '2026 — Present',
-    exp2_role: 'AI Video Advertising (Freelance)',
-    exp2_org: 'Jojoba Oil & Natural Products',
-    exp2_years: '2025 — 2026',
-    exp3_role: 'E-commerce & Digital Marketing',
-    exp3_org: 'Online Retail (Shoes / Apparel)',
-    exp3_years: '2021 — 2023',
-    stack_title: 'Tools & Stack',
-    stack_visual: 'Visual Generation',
-    stack_audio: 'Audio & Voice',
-    stack_edit: 'Editing & Post',
-    cta_title: "Let's make something cinematic",
-    cta_desc: 'Tell me about your story, your brand, or your next project.',
 
     /* Hero */
     hero_label: 'AI Video Producer & Storyteller',
@@ -77,8 +49,6 @@ const I18N = {
     /* Work */
     work_title: 'Work',
     work_watch: 'Watch',
-    work_view: 'View Project',
-    latest_videos: 'Latest Uploads',
     work_p1_tag: 'Documentary',
     work_p1_title: 'Pharaonic Anime',
     work_p1_desc: 'An anime-style retelling of ancient Egyptian history — merging pharaonic grandeur with Japanese animation aesthetics for a visually epic narrative.',
@@ -104,36 +74,6 @@ const I18N = {
     work_p8_title: 'Branded AI Ads',
     work_p8_desc: 'AI-generated advertisement content for brands — combining product storytelling with cinematic AI visuals to create scroll-stopping, engagement-driving campaigns.',
 
-    /* Articles / Latest posts */
-    articles_title: 'Latest Articles',
-    articles_read: 'Read',
-    article1_tag: 'Brand',
-    article1_title: 'Character Consistency',
-    article1_desc: 'How I keep one character consistent across AI-generated videos — LoRA lock, frozen style, node-chain flow.',
-    article2_tag: 'Retention',
-    article2_title: 'TikTok Retention Hooks',
-    article2_desc: 'The first 10 seconds that keep viewers watching — 6 retention hooks for AI short-form.',
-    article3_tag: 'Ad · Product',
-    article3_title: 'Product-First AI Ads',
-    article3_desc: 'How to make the product the hero of every frame — a 5-step framework for AI ads that convert.',
-
-    /* Project detail page */
-    project_back: 'Back to Work',
-    project_about: 'About this project',
-    project_watch_yt: 'Watch on YouTube',
-    project_related: 'More Projects',
-    project_year: 'Year',
-
-    /* Work — long stories (project detail pages) */
-    story_p1: 'A full anime-style retelling of ancient Egyptian history, produced with AI generation tools. Each scene blends pharaonic iconography with Japanese animation aesthetics — hieroglyphs re-lit like neon, temples staged like anime backdrops, and a color palette that moves between gold and shadow. The series carries viewers from the Two Lands through the unification myth, told as an episodic visual poem.',
-    story_p2: 'A cinematic AI recreation of the Titanic\'s final voyage. The film rebuilds the ship and its passengers through AI generation, honoring the historical record while letting the visuals breathe with dramatic, elegiac pacing — deck by deck, from the grand staircase to the frozen Atlantic. Blends archival accuracy with a modern documentary voice.',
-    story_p3: 'An immersive AI-rendered documentary on the Chernobyl disaster. Atmospheric, haunted, and carefully researched — the reactor, the exclusion zone, and the human cost rendered in a desaturated, almost radioactive palette that conveys the scale of history\'s worst nuclear accident without sensationalism.',
-    story_p4: 'An epic AI-generated series on the rise of civilization, from Mesopotamia to the Nile. Cinematic scope meets anthropological depth — ziggurats, floodplains, and the first cities staged as monumental tableaux. A visual history lesson built to make the ancient world feel immediate.',
-    story_p5: 'A unique fusion of Minecraft\'s blocky visual language with cinematic storytelling. Through AI-driven production, voxel worlds become emotionally rich narratives — torchlight, redstone, and endless plains staged like a live-action film, proving that a game engine and a camera can share a voice.',
-    story_p6: 'A neon-drenched anime series inspired by Thoth, the Egyptian god of wisdom. Cyberpunk aesthetics collide with ancient mythology — scribal glyphs as neon signage, temples as arcologies, and a protagonist who writes reality into being. A futuristic visual spectacle rooted in deep myth.',
-    story_p7: 'An episodic sci-fi series following a time traveler\'s secret journal. Each episode visits a different era, and each confession reveals the cost of witnessing history unfold. Part mystery, part elegy — built for those who love history and science fiction in equal measure.',
-    story_p8: 'AI-generated advertisement content for brands. Product storytelling fused with cinematic AI visuals — hero shots, brand worlds, and scroll-stopping sequences engineered to drive engagement and brand recall. A full production pipeline from concept to cut.',
-
     /* Skills */
     skills_title: 'Skills',
     skills_pipeline_title: 'Production Pipeline',
@@ -157,6 +97,11 @@ const I18N = {
 
     /* Contact */
     contact_title: 'Contact',
+    skip_link: 'Skip to content',
+    back_to_top_label: 'Back to top',
+    form_sending: 'Sending…',
+    form_success: 'Message sent successfully. Thank you!',
+    form_error: 'Something went wrong. Please try again.',
     contact_name_label: 'Name',
     contact_email_label: 'Email',
     contact_msg_label: 'Message',
@@ -179,34 +124,6 @@ const I18N = {
     nav_work: 'الأعمال',
     nav_skills: 'المهارات',
     nav_contact: 'التواصل',
-    nav_home: 'الرئيسية',
-
-    /* About detail page */
-    about_hero_title: 'نبذة والخدمات',
-    about_hero_lead: 'روائي سينمائي بالذكاء الاصطناعي يحوّل التاريخ والأسطورة والخيال إلى أفلام تلامس القلوب.',
-    about_bio_title: 'القصة',
-    about_approach_title: 'كيف أعمل',
-    about_approach: 'كل مشروع يبدأ بقصة تستحق أن تُروى. أصمّم خط إنتاج يدمج السيناريو وتوليد المشاهد بالذكاء الاصطناعي والصوت في لغة سينمائية واحدة — ثم أنقله من أول لقطة إلى المونتاج النهائي بالعناية نفسها بالإيقاع والنبرة والتفاصيل.',
-    about_education_title: 'التعليم',
-    edu_degree: 'بكالوريوس المالية وعلوم الإدارة',
-    edu_school: 'كلية التكنولوجيا والتنمية، مصر',
-    edu_years: '2014 — 2017',
-    about_experience_title: 'الخبرات',
-    exp1_role: 'صانع محتوى ومنتج فيديو',
-    exp1_org: 'اعترافات مسافر الزمن — قناة يوتيوب',
-    exp1_years: '2026 — الآن',
-    exp2_role: 'إعلانات فيديو بالذكاء الاصطناعي (عمل حر)',
-    exp2_org: 'زيوت الجوجوبا والمنتجات الطبيعية',
-    exp2_years: '2025 — 2026',
-    exp3_role: 'تجارة إلكترونية وتسويق رقمي',
-    exp3_org: 'بيع بالتجزئة عبر الإنترنت (أحذية / ملابس)',
-    exp3_years: '2021 — 2023',
-    stack_title: 'الأدوات والتقنيات',
-    stack_visual: 'توليد المشاهد',
-    stack_audio: 'الصوت والتعليق',
-    stack_edit: 'المونتاج وما بعده',
-    cta_title: 'لنصنع شيئًا سينمائيًا',
-    cta_desc: 'أخبرني عن قصتك أو علامتك أو مشروعك القادم.',
 
     /* Hero */
     hero_label: 'منتج فيديو بالذكاء الاصطناعي وروائي بصري',
@@ -247,8 +164,6 @@ const I18N = {
     /* Work */
     work_title: 'الأعمال',
     work_watch: 'مشاهدة',
-    work_view: 'عرض المشروع',
-    latest_videos: 'أحدث الإصدارات',
     work_p1_tag: 'وثائقي',
     work_p1_title: 'أنمي الفراعنة',
     work_p1_desc: 'إعادة سرد تاريخ مصر القديمة بأسلوب الأنمي — دمج عظمة الفراعنة مع جماليات الرسوم المتحركة اليابانية في سرد ملحمي مبهر.',
@@ -274,36 +189,6 @@ const I18N = {
     work_p8_title: 'إعلانات ذكاء اصطناعي تجارية',
     work_p8_desc: 'محتوى إعلاني بتقنيات الذكاء الاصطناعي للعلامات التجارية — يجمع سرد قصة المنتج مع المشاهد السينمائية لإنتاج حملات توقف التمرير وتزيد التفاعل.',
 
-    /* Articles / Latest posts */
-    articles_title: 'أحدث المقالات',
-    articles_read: 'اقرأ',
-    article1_tag: 'علامة',
-    article1_title: 'ثبات الشخصية',
-    article1_desc: 'كيف أُبقِي الشخصية نفسها متسقة عبر فيديوهات الذكاء الاصطناعي — قفل LoRA، أسلوب مجمّد، سير عقد.',
-    article2_tag: 'احتفاظ',
-    article2_title: 'خطافات الاحتفاظ في TikTok',
-    article2_desc: 'أول 10 ثوانٍ تُبقي المشاهدين — 6 خطافات احتفاظ للفيديو القصير بالذكاء الاصطناعي.',
-    article3_tag: 'إعلان · منتج',
-    article3_title: 'إعلانات بمنتج أولاً',
-    article3_desc: 'كيف تجعل المنتج بطل كل إطار — إطار عمل من 5 خطوات لإعلانات ذكاء اصطناعي تُحوّل.',
-
-    /* Project detail page */
-    project_back: 'العودة إلى الأعمال',
-    project_about: 'عن هذا المشروع',
-    project_watch_yt: 'شاهد على يوتيوب',
-    project_related: 'مشاريع أخرى',
-    project_year: 'السنة',
-
-    /* Work — long stories (project detail pages) */
-    story_p1: 'إعادة سرد كاملة لتاريخ مصر القديمة بأسلوب الأنمي، مُنتجة بأدوات الذكاء الاصطناعي. كل مشهد يمزج الأيقونات الفرعونية مع جماليات الرسوم اليابانية — رموز مضاءة كالنيون، معابد صُوّرت كخلفيات أنمي، ولوحة لونية تتنقل بين الذهب والظل. تنقل السلسلة المشاهد من الأرضين عبر أسطورة التوحيد، حكاية شعرية حلقة تتبع أخرى.',
-    story_p2: 'إعادة سينمائية بتقنيات الذكاء الاصطناعي لرحلة التيتانيك الأخيرة. يُعيد الفيلم بناء السفينة وركابها عبر التوليد الذكي، محترمًا السجل التاريخي فيما تتنفس الصور بإيقاع درامي حزين — طابقًا طابقًا، من السلم الكبير إلى الأطلسي المتجمد. مزيج من الدقة الأرشيفية وصوت وثائقي عصري.',
-    story_p3: 'فيلم وثائقي غامر بتقنيات الذكاء الاصطناعي عن كارثة تشرنوبيل. أجواء مشوقة وحزينة وبحث دقيق — المفاعل، منطقة العزل، والتكلفة الإنسانية المرسومة بلوحة شبه إشعاعية توصل حجم أسوأ حادث نووي في التاريخ دون إثارة.',
-    story_p4: 'سلسلة ملحمية بتقنيات الذكاء الاصطناعي حول نشوء الحضارة، من بلاد الرافدين إلى وادي النيل. مدى سينمائي يلتقي عمقًا أنثروبولوجيًا — الزقورات، السهول الفيضية، وأول المدن مصوّرة كلوحات ضخمة. درس تاريخي بصري يجعل العالم القديم ملموسًا.',
-    story_p5: 'مزيج فريد بين لغة ماينكرافت المكعبة والسرد السينمائي. عبر إنتاج ذكي، تتحوّل العوالم إلى روايات غنية عاطفيًا — ضوء المشاعل، حجر الرايدستون، والسهول اللانهائية مصوّرة كفيلم واقعي، مثبّتًا أن لعبة وكاميرا يمكن أن تتشاركا صوتًا واحدًا.',
-    story_p6: 'سلسلة أنمي مغمورة بالنيون مستوحاة من تحوت إله الحكمة المصري. جماليات السايبربانك تصطدم بالأساطير القديمة — رموز الكتبة كإشارات نيون، المعابد كأبراج مستقبلية، وبطل يكتب الواقع إلى الوجود. مشهد بصري مستقبلي جذوره أسطورية عميقة.',
-    story_p7: 'سلسلة خيال علمي حلقة تتبع يوميات مسافر عبر الزمن السرية. كل حلقة تزور حقبة مختلفة، وكل اعتراف يكشف ثمن مشاهدة التاريخ وهو يتكشف. جزء غموض، جزء مرثية — مصممة لمن يحب التاريخ والخيال العلمي معًا.',
-    story_p8: 'محتوى إعلاني بتقنيات الذكاء الاصطناعي للعلامات التجارية. سرد قصة المنتج يندمج مع مشاهد سينمائية — لقطات بطولية، عوالم علامة، وتسلسلات توقف التمرير مصممة لزيادة التفاعل واستدعاء العلامة. خط إنتاج كامل من الفكرة إلى المونتاج.',
-
     /* Skills */
     skills_title: 'المهارات',
     skills_pipeline_title: 'خط الإنتاج',
@@ -327,6 +212,11 @@ const I18N = {
 
     /* Contact */
     contact_title: 'التواصل',
+    skip_link: 'تخطَّ إلى المحتوى',
+    back_to_top_label: 'العودة إلى الأعلى',
+    form_sending: 'جارٍ الإرسال…',
+    form_success: 'تم إرسال رسالتك بنجاح. شكرًا لك!',
+    form_error: 'حدث خطأ ما، حاول مرة أخرى.',
     contact_name_label: 'الاسم',
     contact_email_label: 'البريد الإلكتروني',
     contact_msg_label: 'الرسالة',
@@ -349,34 +239,6 @@ const I18N = {
     nav_work: '作品',
     nav_skills: '技能',
     nav_contact: '聯絡',
-    nav_home: '首頁',
-
-    /* About detail page */
-    about_hero_title: '關於與服務',
-    about_hero_lead: '以 AI 打造電影級敘事的說故事人，將歷史、神話與想像化為觸動人心的影片。',
-    about_bio_title: '故事',
-    about_approach_title: '我的工作方式',
-    about_approach: '每個專案都從一個值得訴說的故事開始。我設計一條製作管線，將腳本、AI 視覺生成、配音與聲音融為單一電影語言——然後從第一格到最終剪輯，我對節奏、調性與細節始終保持同樣的專注。',
-    about_education_title: '學歷',
-    edu_degree: '財務與管理科學理學士',
-    edu_school: '埃及科技與發展學院',
-    edu_years: '2014 — 2017',
-    about_experience_title: '經歷',
-    exp1_role: '內容創作者與影片製作人',
-    exp1_org: '時空旅人的告白 — YouTube 頻道',
-    exp1_years: '2026 — 至今',
-    exp2_role: 'AI 影片廣告（自由接案）',
-    exp2_org: '荷荷巴油與天然產品',
-    exp2_years: '2025 — 2026',
-    exp3_role: '電子商務與數位行銷',
-    exp3_org: '線上零售（鞋類 / 服飾）',
-    exp3_years: '2021 — 2023',
-    stack_title: '工具與技術',
-    stack_visual: '視覺生成',
-    stack_audio: '音效與配音',
-    stack_edit: '剪輯與後期',
-    cta_title: '讓我們打造電影級作品',
-    cta_desc: '告訴我你的故事、你的品牌，或你的下一個專案。',
 
     /* Hero */
     hero_label: 'AI 影片製作人 · 敘事藝術家',
@@ -417,8 +279,6 @@ const I18N = {
     /* Work */
     work_title: '作品',
     work_watch: '觀看',
-    work_view: '檢視專案',
-    latest_videos: '最新上傳',
     work_p1_tag: '紀錄片',
     work_p1_title: '法老動漫',
     work_p1_desc: '以動漫風格重述古埃及歷史——將法老的宏偉與日式動畫美學融合，打造視覺史詩級敘事。',
@@ -444,36 +304,6 @@ const I18N = {
     work_p8_title: '品牌 AI 廣告',
     work_p8_desc: '為品牌打造的 AI 生成廣告內容——融合產品敘事與電影級 AI 視覺，創造讓人停下拇指、驅動互動的行銷作品。',
 
-    /* Articles / Latest posts */
-    articles_title: '最新文章',
-    articles_read: '閱讀',
-    article1_tag: '品牌',
-    article1_title: '角色一致性',
-    article1_desc: '如何在 AI 影片中讓同一個角色保持一致——LoRA 鎖定、凍結風格、節點流程。',
-    article2_tag: '留存',
-    article2_title: 'TikTok 留存鉤子',
-    article2_desc: '留住觀眾的前 10 秒——適用於 AI 短影音的 6 個留存鉤子。',
-    article3_tag: '廣告 · 產品',
-    article3_title: '產品優先 AI 廣告',
-    article3_desc: '如何讓產品成為每一幀的主角——讓 AI 廣告轉化的 5 步框架。',
-
-    /* Project detail page */
-    project_back: '返回作品',
-    project_about: '關於這個專案',
-    project_watch_yt: '在 YouTube 觀看',
-    project_related: '更多專案',
-    project_year: '年份',
-
-    /* Work — long stories (project detail pages) */
-    story_p1: '以動漫風格完整重述古埃及歷史，以 AI 生成工具製作。每個場景將法老圖騰與日式動畫美學交織——像霓虹一樣點亮的象形文字、如動漫背景般構築的神廟，以及游走於金色與陰影間的色調。系列帶領觀眾從兩地到統一的傳說，以單元視覺詩的形式娓娓道來。',
-    story_p2: 'AI 電影級重現鐵達尼號最後航程。影片以 AI 生成重建船隻與乘客，致敬歷史紀錄，同時讓畫面以戲劇性、哀婉的節奏呼吸——逐層甲板，從大階梯到結冰的大西洋。融合檔案考證與現代紀錄片語言。',
-    story_p3: 'AI 渲染的沉浸式紀錄片，呈現車諾比核災。氛圍詭譎、震撼人心且考證嚴謹——反應爐、隔離區與人性代價，以近乎放射性的褪色調呈現，傳達史上最嚴重核事故的規模而不流於煽情。',
-    story_p4: 'AI 生成的史詩系列，探索文明崛起——從美索不達米亞到尼羅河。電影級格局與人類學深度相遇——金字塔廟、沖積平原與最早的城市，以宏偉舞臺構築。一堂讓古代世界變得近在眼前的視覺歷史課。',
-    story_p5: 'Minecraft 方塊視覺語言與電影敘事的獨特融合。透過 AI 驅動製作，方塊世界成為情感豐富的敘事——火炬火光、紅石與無盡平原，以真人電影方式構築，證明遊戲引擎與鏡頭可以共用同一種聲音。',
-    story_p6: '以霓虹浸染的動漫系列，靈感來自埃及智慧之神托特。賽博龐克美學與古老神話碰撞——書吏符號化為霓虹看板、神廟化為未來城，主角書寫現實成真。深植於神話的未來視覺奇觀。',
-    story_p7: '單元式科幻系列，追隨時空旅人的秘密日誌。每集造訪一個時代，每段告白揭露見證歷史的代價。既是懸疑，也是輓歌——獻給同樣熱愛歷史與科幻的觀眾。',
-    story_p8: '為品牌打造的 AI 生成廣告內容。產品敘事與電影級 AI 視覺融合——英雄鏡頭、品牌世界、扣人心弦的序列，驅動互動與品牌記憶。從概念到剪輯的完整產線。',
-
     /* Skills */
     skills_title: '技能',
     skills_pipeline_title: '製作流程',
@@ -497,6 +327,11 @@ const I18N = {
 
     /* Contact */
     contact_title: '聯絡',
+    skip_link: '跳至主要內容',
+    back_to_top_label: '回到頂部',
+    form_sending: '傳送中…',
+    form_success: '訊息已成功送出，感謝您！',
+    form_error: '發生錯誤，請再試一次。',
     contact_name_label: '姓名',
     contact_email_label: '電子郵件',
     contact_msg_label: '訊息',
@@ -511,12 +346,4 @@ const I18N = {
     page_404_desc: '您所尋找的頁面不存在或已被移動。',
     page_404_back: '返回首頁'
   }
-};
-
-/* Helper: resolve a key in the currently-active language (fallback EN) */
-I18N.current = function (key) {
-  var lang = (document.documentElement.getAttribute('lang') || 'en');
-  var s = I18N[lang];
-  if (s && s[key] !== undefined) { return s[key]; }
-  return I18N.en[key] !== undefined ? I18N.en[key] : key;
 };

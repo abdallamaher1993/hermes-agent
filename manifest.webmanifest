@@ -1,0 +1,11 @@
+{
+  "name": "Abdalla Maher — AI Video Producer & Storyteller",
+  "short_name": "A. Maher",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0A0A0A",
+  "theme_color": "#0A0A0A",
+  "icons": [
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

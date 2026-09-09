@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://abdallamaher1993.github.io/hermes-agent/sitemap.xml
