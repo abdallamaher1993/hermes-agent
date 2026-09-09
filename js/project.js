@@ -62,7 +62,6 @@
   /* Re-apply language after i18n fills data-i18n spans */
   if (window.I18N) { document.documentElement.setAttribute('lang', document.documentElement.getAttribute('lang') || 'en'); }
 
-  var i18nEls = document.querySelectorAll('[data-i18n]');
   var langBtns = document.querySelectorAll('.lang-btn');
   function rerenderDynamic() {
     tagEl.textContent = t(project.tagKey);
