@@ -436,8 +436,10 @@ section {
 /* ===================== CONTACT ===================== */
 .contact-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 60px;
+  max-width: 560px;
+  margin: 0 auto;
 }
 .contact-form { display: flex; flex-direction: column; gap: 20px; }
 .form-group { display: flex; flex-direction: column; gap: 6px; }
@@ -473,8 +475,8 @@ section {
 .form-status.error { color: var(--c-accent-on-dark); }
 
 .contact-social {
-  padding-left: 40px;
-  border-left: 1px solid var(--c-grid);
+  padding-left: 0;
+  border-left: none;
 }
 .social-intro {
   font-size: 13px;
@@ -555,10 +557,8 @@ html[dir="rtl"] .about-meta {
   border-right: 1px solid var(--c-grid);
 }
 html[dir="rtl"] .contact-social {
-  padding-left: 0;
-  padding-right: 40px;
-  border-left: none;
-  border-right: 1px solid var(--c-grid);
+  padding-right: 0;
+  border-right: none;
 }
 
 /* ===================== zh-TW ===================== */
@@ -627,8 +627,6 @@ html[lang="zh-TW"] {
   .contact-social {
     padding-left: 0;
     border-left: none;
-    border-top: 1px solid var(--c-grid);
-    padding-top: 24px;
   }
   html[dir="rtl"] .contact-social {
     padding-right: 0;
