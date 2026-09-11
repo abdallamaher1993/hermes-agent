@@ -90,11 +90,7 @@
     });
   }
 
-  /* ---- Contact Form (Web3Forms AJAX, localized status) ----
-     Success is only reported when the response body's own
-     `success` flag confirms delivery — a 200 OK alone is not
-     enough, since some form backends return 200 even when a
-     submission was not actually forwarded. */
+  /* ---- Contact Form (FormSubmit AJAX, localized status) ---- */
   var form = document.getElementById('contactForm');
   var formStatus = document.getElementById('formStatus');
 
@@ -114,17 +110,12 @@
         headers: { 'Accept': 'application/json' }
       })
         .then(function (res) {
-          return res.json().then(function (data) {
-            return { ok: res.ok, data: data };
-          });
-        })
-        .then(function (result) {
-          if (result.ok && result.data && result.data.success) {
+          if (res.ok) {
             formStatus.textContent = t('form_success');
             formStatus.className = 'form-status success';
             form.reset();
           } else {
-            throw new Error((result.data && result.data.message) || 'error');
+            throw new Error('FormSubmit responded ' + res.status);
           }
         })
         .catch(function () {
