@@ -90,43 +90,7 @@
     });
   }
 
-  /* ---- Contact Form (FormSubmit AJAX, localized status) ---- */
-  var form = document.getElementById('contactForm');
-  var formStatus = document.getElementById('formStatus');
-
-  if (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var submitBtn = form.querySelector('button[type="submit"]');
-      var formData = new FormData(form);
-      formStatus.textContent = t('form_sending');
-      formStatus.className = 'form-status';
-      if (submitBtn) submitBtn.disabled = true;
-      trackEvent('contact_form_submit', {});
-
-      fetch(form.action, {
-        method: 'POST',
-        body: formData,
-        headers: { 'Accept': 'application/json' }
-      })
-        .then(function (res) {
-          if (res.ok) {
-            formStatus.textContent = t('form_success');
-            formStatus.className = 'form-status success';
-            form.reset();
-          } else {
-            throw new Error('FormSubmit responded ' + res.status);
-          }
-        })
-        .catch(function () {
-          formStatus.textContent = t('form_error');
-          formStatus.className = 'form-status error';
-        })
-        .finally(function () {
-          if (submitBtn) submitBtn.disabled = false;
-        });
-    });
-  }
+  /* ---- (Contact form removed) ---- */
 
   /* ---- Footer Year ---- */
   var yearEl = document.getElementById('footerYear');
